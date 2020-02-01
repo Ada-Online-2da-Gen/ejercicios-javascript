@@ -24,7 +24,7 @@ Usar `confirm` cuando se necesite obtener la respuesta a una pregunta de sí o n
 **Cátedra promocionada**
 - Hacer un programa que pida ingresar los valores de los tres parciales de la cátedra mostrar un mensaje indicando si promociona o no la cátedra. La misma se promociona si al menos dos de ellos fueron aprobados con una nota de 8 o más.
 
----
+## Evaluación de circuito corto
 
 Usar evaluación de circuito corto para cuando haya que ejecutar dependiendo del resultado de alguna comparación entre valores. A diferencia del anterior, mostrar mensajes en vez de `true` y `false`
 
@@ -32,6 +32,8 @@ Usar evaluación de circuito corto para cuando haya que ejecutar dependiendo del
 
 **EXTRA II:** Pasar los ejercicios anteriores usando evaluación de circuito corto para mostrar mensajes en vez de `true` y `false`
 <br>
+<br>
+
 
 **Número más grande (2 números)**
 
