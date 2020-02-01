@@ -17,4 +17,4 @@
 - Hacer un programa que pregunte por separado si el auto tiene aceite, agua, y neumáticos con presión. Mostrar en un mensaje si tiene que hacer mantenimiento o no si alguna de las respuestas es negativa
 
 **Acceso restringido**
-- Un club tiene las siguientes reglas: sólo pueden entrar miembros que tengan la cuota al día, o no miembros que tengan autorización. Hacer un programa que pregunte estas cuatro cosas y muestre luego un mensaje indicando si tiene el acceso permitido o no.
+- Un club tiene las siguientes reglas: sólo pueden entrar miembros que tengan la cuota al día, o no miembros que tengan autorización. Hacer un programa que pregunte estas si es miembro, si tiene la cuota al día y si tiene autorización y muestre luego un mensaje indicando si tiene el acceso permitido o no.
