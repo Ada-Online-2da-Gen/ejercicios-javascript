@@ -31,6 +31,7 @@ Usar evaluación de circuito corto para cuando haya que ejecutar dependiendo del
 **EXTRA:** Agregar mensajes de error cuando los inputs son inválidos (para algunos casos). Por ejemplo, cuando se agrega números fuera del rango, o no cuando se cancela el `prompt` o no se ingresa ningún valor.
 
 **EXTRA II:** Pasar los ejercicios anteriores usando evaluación de circuito corto para mostrar mensajes en vez de `true` y `false`
+<br>
 
 **Número más grande (2 números)**
 
