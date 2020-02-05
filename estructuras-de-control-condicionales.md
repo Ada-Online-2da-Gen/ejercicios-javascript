@@ -45,8 +45,8 @@ Luego, permitirle ingresar la cantidad de sabores correspondientes por separado 
   - grupo A = {a, e, i, o ,u}
   - grupo B = {b, c, d, f, g}
   - grupo C = {h, j, k , l, m}
-  - grupo D = {n, o, p, q, r}
-  = grupo E = {s, t, u, v, w, x, y, z}
+  - grupo D = {n, p, q, r}
+  - grupo E = {s, t, v, w, x, y, z}
 
 **Sandwich**
 - Crear un programa que pregunte al usuario paso por paso qué opciones desea elegir para armar su pedido. En caso de que no se elija una opción válida en cualquier paso debe mostrar un mensaje alertando que el pedido saldrá incompleto. Mostrar al final un mensaje con el pedido resultante. Debe preguntar:
@@ -64,3 +64,46 @@ Luego, permitirle ingresar la cantidad de sabores correspondientes por separado 
 
 **Cambio de contraseña** 
 - Hacer un programa que permita cambiar la contraseña de usuario. Para eso tiene que responder las tres preguntas de seguridad. Si las tres preguntas son respondidas correctamente, tiene que pedir por la nueva contraseña y luego mostrar un mensaje que fue cambiada. En caso de que al menos alguna pregunta fue respondida incorrectamente debe mostrar un mensaje advirtiéndolo. Definir de antemano (*hardcodear*) preguntas y respuestas.
+
+---
+
+Para los siguientes ejercicios utilizar el condicional **switch** donde sea necesario.
+
+**Meses del año**
+- Crear un programa que pida al usuario un numero y mostrar en un mensaje el nombre del mes correspondiente.
+
+**Estaciones del año**
+- Crear un programa que pida una estación del año y mostrar en un mensaje la fecha en la que comienza y termina
+
+**Calculadora**
+- Crear un programa que permita elegir entre las operaciones: SUMA, RESTA, DIVISION y MULTIPLICACION, y luego de elegida, ingresar dos números y hacer dicha operación con ella.
+
+**Piedra, papel o tijera**
+- Crear un programa que permita ingresar al jugador piedra, papel o tijera, genere de forma aleatoria la jugada de la computadora, y muestre en un mensaje quién ganó, con las jugadas respectivas.
+
+**Adivinanzas**
+- Crear un programa que muestre una adivinanza (entre 4 o 5 posibles) al azar, y permita al usuario ingresar la respuesta. Mostrarle un mensaje indicándole si acertó o no.
+
+**Televisor**
+- Hacer un programa que empiece preguntando si se desea prender el televisor. Si elige que no, el programa debe terminar. Si elige que sí, debe mostrar un mensaje con el canal actual y el el nivel de volumen de un televisor, y debe permitir realizar las siguientes operaciones:
+
+  - CAMBIAR CANAL: permite ingresar un canal (0 al 99)
+  - CANAL SIGUIENTE: sube un canal
+  - CANAL ANTERIOR: baja un canal
+  - SUBIR VOLUMEN: sube en volumen en 5
+  - BAJAR VOLUMEN: disminuye en volumen en 5
+  - MUTEAR: pone el volumen en 0
+
+Una vez elegida la opción e ingresado el valor si corresponde, debe mostrar un mensaje con el canal y el nivel del volumen actual.
+
+**ATM**
+- Crear un programa que permita hacer las siguientes operaciones: EXTRAER, DEPOSITAR, TRANSFERIR, CAMBIAR PIN, SALIR.
+  - El programa debe tener un dinero inicial
+  - El programa debe tener una contraseña inicial
+  - Para empezar a utilizarlo y llegar al menú de opciones, debe mostrar pedir ingresar el PIN (hardcodeado)
+  - EXTRAER debe pedir cuánto se desea extraer y mostrar luego el dinero restante, sólo si la extracción es menor al dinero disponible
+  - DEPOSITAR debe pedir cuánto se desea ingresar y mostrar luego el dinero resultante
+  - TRANSFERIR debe pedir por un CBU (o alias) a transferir, preguntar cuánto se desea transferir y mostrar el dinero restante, si la transferencia es menor al dinero disponible y si el CBU es válido. Los CBU o alias válidos posibles deben estar hardcodeados.
+  - CAMBIAR PIN debe pedir primero por la contraseña nueva y luego por la contraseña original para confirmar el cambio
+  - SALIR debe mostrar un mensaje de despedida
+  - En cualquier situación mostrar mensajes de lo que esté pasando, ya sean errores o operaciones exitosas
