@@ -65,7 +65,101 @@ Luego, permitirle ingresar la cantidad de sabores correspondientes por separado 
 - Crear un programa que simule un juego de "Elige tu propia aventura". Debe describir un escenario y presentar opciones disponibles para actuar. Luego, a partir de la opción elegida, repetir el proceso hasta llegar a un final. El juego debe tener 1 escenario inicial con 3 opciones posibles, cada opción debe llevar a un nuevo escenario (distinto de los demás) con 3 opciones disponibles también. Estas opciones deben llevar a un final (por lo tanto hay 9 finales posibles). 
 
 **Cambio de contraseña** 
-- Hacer un programa que permita cambiar la contraseña de usuario. Para eso tiene que responder las tres preguntas de seguridad. Si las tres preguntas son respondidas correctamente, tiene que pedir por la nueva contraseña y luego mostrar un mensaje que fue cambiada. En caso de que al menos alguna pregunta fue respondida incorrectamente debe mostrar un mensaje advirtiéndolo. Definir de antemano (*hardcodear*) preguntas y respuestas.
+- Crear un programa que permita cambiar la contraseña de usuario. Para eso tiene que responder las tres preguntas de seguridad. Si las tres preguntas son respondidas correctamente, tiene que pedir por la nueva contraseña y luego mostrar un mensaje que fue cambiada. En caso de que al menos alguna pregunta fue respondida incorrectamente debe mostrar un mensaje advirtiéndolo. Definir de antemano (*hardcodear*) preguntas y respuestas.
+
+**Estación del año**
+- Crear un programa que pregunte por el día, el mes, y el hemisferio (norte/sur) y devuelva la estación del año correspondiente
+
+**Envido**
+- Crear un programa que permita ingresar 3 cartas de truco (mazo español, sin ochos y nueves) una por una, ingresando número y palo por separado, y mostrar luego si se tiene puntos para hacer envido o no, y cuántos. Las reglas para el mismo son:
+  - Si se tiene dos cartas del mismo palo, de las cuales una **(A)** es un 10, un 11 o un 12, y la otra **(B)** un número distinto, los puntos de envido son: 20 + el número de la carta **(B)**
+  - Si se tienen dos cartas del mismo palo, de las cuales ambas son cualquiera de los siguientes números: 10, 11 o 12 (no hace falta que sean iguales), los puntos de envido son 20.
+  - Si se tienen dos cartas del mismo palo, y ninguna de ellas es un 10, un 11, o un 12, los puntos de envido son la suma de ambas cartas + 20
+  
+```
+// Por ejemplo
+Ingrese número primera carta: 7
+Ingrese palo primera carta: espada
+
+Ingrese número segunda carta: 4
+Ingrese palo segunda carta: copa
+
+Ingrese número tercera carta: 3
+Ingrese palo tercera carta: espada
+
+Sus puntos de envido son: 30
+```
+
+<br>
+
+## Número aleatorio
+
+Podemos obtener un número aleatorio usando el método `Math.random()`. Esto nos devuelve un número distinto entre 0 y 1 cada vez que lo utilizamos. 
+  - Para que nos de un número aleatorio hasta cierto número X, tenemos que multiplicarlo por dicho número X, `Math.random() * 10` nos da un número aleatorio entre 0 y 10 (contando decimales)
+  - Para que nos devuelva números enteros, tenemos que usar `Math.round(Math.random())` (`Math.round()` redondea todo número que se le pasa entre paréntesis)
+  - Combinando ambos, p.ej.: `Math.round(Math.random() * 10)` nos da un número aleatorio entre 1 y 10
+  - Si queremos que empiece a contar desde un cierto número, tenes que sumarle dicho número, por ejemplo p.ej.: `Math.round(Math.random() * 10) + 100` nos da un número entero entre 100 y 110
+
+Para usar un número aleatorio, tenemos que asignarlo a una variable
+```javascript
+const random = Math.round(Math.random() * 10) + 100;
+```
+
+Usando valores aleatorios y condicionales, resolver los siguientes ejercicios:
+
+**Piedra, papel o tijera**
+- Crear un programa que permita ingresar al jugador piedra, papel o tijera, genere de forma aleatoria la jugada de la computadora, y muestre en un mensaje quién ganó, con las jugadas respectivas.
+
+**Adivinanzas**
+- Crear un programa que muestre una adivinanza (entre 4 o 5 posibles) al azar, y permita al usuario ingresar la respuesta. Mostrarle un mensaje indicándole si acertó o no.
+
+**Simón dice**
+- Crear un programa que muestre una secuencia de 5 nombres de colores en orden aleatorio. Los colores posibles son 4: rojo, verde, azul y amarillo. Pedir luego ingresar 5 colores uno por uno, y mostrar al finalizar si acertó la secuencia.
+
+```
+// Ejemplo
+Simón dice: rojo, rojo, azul, verde, amarillo.
+
+Ingrese el primer color: rojo
+Ingrese el primer color: rojo
+Ingrese el primer color: azul
+Ingrese el primer color: verde
+Ingrese el primer color: amarillo
+
+Felicitaciones! Has ganado!
+```
+
+**Truco**
+- Crear un programa que permita ingresar una carta del truco (mazo español, sin ochos y nueves) ingresando número y palo por separado. Hacer que el programa elija aleatoriamente otra carta. Mostrar un mensaje con ambas cartas, indicando cuál gana a cuál (o si empatan).
+
+  Orden de las cartas, de mayor valor a menor:
+  
+  - 1 de espadas
+  - 1 de bastos
+  - 7 de espadas
+  - 7 de oros
+  - 3
+  - 2
+  - 1 de copa y 1 de oro
+  - 12
+  - 11
+  - 10
+  - 7 de copas y 7 de oros
+  - 6
+  - 5
+  - 4
+
+```
+// Ejemplo
+Ingrese el número de la carta: 7
+Ingrese el palo de la carta: espada
+
+Has elegido: 7 de espada
+Computadora eligió: 3 de copa
+
+¡Has ganado!
+```
+
 <br>
 
 ## Condicional `switch`
@@ -75,17 +169,11 @@ Para los siguientes ejercicios utilizar el condicional **switch** donde sea nece
 **Meses del año**
 - Crear un programa que pida al usuario un numero y mostrar en un mensaje el nombre del mes correspondiente.
 
-**Estaciones del año**
+**Estaciones del año II**
 - Crear un programa que pida una estación del año y mostrar en un mensaje la fecha en la que comienza y termina
 
 **Calculadora**
 - Crear un programa que permita elegir entre las operaciones: SUMA, RESTA, DIVISION y MULTIPLICACION, y luego de elegida, ingresar dos números y hacer dicha operación con ella.
-
-**Piedra, papel o tijera**
-- Crear un programa que permita ingresar al jugador piedra, papel o tijera, genere de forma aleatoria la jugada de la computadora, y muestre en un mensaje quién ganó, con las jugadas respectivas.
-
-**Adivinanzas**
-- Crear un programa que muestre una adivinanza (entre 4 o 5 posibles) al azar, y permita al usuario ingresar la respuesta. Mostrarle un mensaje indicándole si acertó o no.
 
 **Televisor**
 - Hacer un programa que empiece preguntando si se desea prender el televisor. Si elige que no, el programa debe terminar. Si elige que sí, debe mostrar un mensaje con el canal actual y el el nivel de volumen de un televisor, y debe permitir realizar las siguientes operaciones:
