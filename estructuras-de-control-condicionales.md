@@ -106,6 +106,8 @@ const random = Math.round(Math.random() * 10) + 100;
 ```
 
 Usando valores aleatorios y condicionales, resolver los siguientes ejercicios:
+<br>
+
 
 **Piedra, papel o tijera**
 - Crear un programa que permita ingresar al jugador piedra, papel o tijera, genere de forma aleatoria la jugada de la computadora, y muestre en un mensaje quién ganó, con las jugadas respectivas.
@@ -133,21 +135,23 @@ Felicitaciones! Has ganado!
 - Crear un programa que permita ingresar una carta del truco (mazo español, sin ochos y nueves) ingresando número y palo por separado. Hacer que el programa elija aleatoriamente otra carta. Mostrar un mensaje con ambas cartas, indicando cuál gana a cuál (o si empatan).
 
   Orden de las cartas, de mayor valor a menor:
-  
-  - 1 de espadas
-  - 1 de bastos
-  - 7 de espadas
-  - 7 de oros
-  - 3
-  - 2
-  - 1 de copa y 1 de oro
-  - 12
-  - 11
-  - 10
-  - 7 de copas y 7 de oros
-  - 6
-  - 5
-  - 4
+
+```
+1 de espadas
+1 de bastos
+7 de espadas
+7 de oros
+3
+2
+1 de copa y 1 de oro
+12
+11
+10
+7 de copas y 7 de oros
+6
+5
+4
+```
 
 ```
 // Ejemplo
