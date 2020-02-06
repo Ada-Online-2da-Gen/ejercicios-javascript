@@ -147,7 +147,7 @@ Felicitaciones! Has ganado!
 12
 11
 10
-7 de copas y 7 de oros
+7 de copas y 7 de bastos
 6
 5
 4
