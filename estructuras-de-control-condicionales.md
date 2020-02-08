@@ -182,20 +182,18 @@ Para los siguientes ejercicios utilizar el condicional **switch** donde sea nece
 **Tamagochi**
 
 - Crear un programa que simule un Tamagochi (mascota virtual). Debe tener 4 variables: salud, felicidad, limpieza, energía, cuyos valores pueden ir entre 1 y 10. El programa debe iniciar mostrando un mensaje con el nombre del tamagochi y los valores de cada variable (que son asignados aleatoriamente). Luego, debe mostrar las siguientes posibles acciones a realizar, que modifican los valores de la siguiente forma:
-
-- ALIMENTAR: +3 energía, +2 felicidad 
-- JUGAR: +2 felicidad, -2 energía, -1 limpieza 
-- DORMIR: +5 energía, +2 salud, -2 limpieza
-- VACUNAR: +5 salud, -6 felicidad
-- BAÑAR: +3 salud
-- RETAR: -3 felicidad
-- ACARICIAR: +4 felicidad
+  - ALIMENTAR: +3 energía, +2 felicidad 
+  - JUGAR: +2 felicidad, -2 energía, -1 limpieza 
+  - DORMIR: +5 energía, +2 salud, -2 limpieza
+  - VACUNAR: +5 salud, -6 felicidad
+  - BAÑAR: +3 salud
+  - RETAR: -3 felicidad
+  - ACARICIAR: +4 felicidad
 
  Cuando el usuario selecciona una, debe mostrar el valor final de las variables.
 
 **Televisor**
 - Hacer un programa que empiece preguntando si se desea prender el televisor. Si elige que no, el programa debe terminar. Si elige que sí, debe mostrar un mensaje con el canal actual y el el nivel de volumen de un televisor, y debe permitir realizar las siguientes operaciones:
-
   - CAMBIAR CANAL: permite ingresar un canal (0 al 99)
   - CANAL SIGUIENTE: sube un canal
   - CANAL ANTERIOR: baja un canal
@@ -208,14 +206,14 @@ Una vez elegida la opción e ingresado el valor si corresponde, debe mostrar un 
 **ATM**
 - Crear un programa que permita hacer las siguientes operaciones: EXTRAER, DEPOSITAR, TRANSFERIR, CAMBIAR PIN, SALIR.
   - El programa debe tener un dinero inicial
-  - El programa debe tener una contraseña inicial
-  - Para empezar a utilizarlo y llegar al menú de opciones, debe mostrar pedir ingresar el PIN (hardcodeado)
+  - El programa debe tener un PIN inicial
+  - Para empezar a utilizarlo y llegar al menú de opciones, debe pedir ingresar el PIN. Si se lo ingresa incorrectamente debe terminar el programa
   - EXTRAER debe pedir cuánto se desea extraer y mostrar luego el dinero restante, sólo si la extracción es menor al dinero disponible
   - DEPOSITAR debe pedir cuánto se desea ingresar y mostrar luego el dinero resultante
-  - TRANSFERIR debe pedir por un CBU (o alias) a transferir, preguntar cuánto se desea transferir y mostrar el dinero restante, si la transferencia es menor al dinero disponible y si el CBU es válido. Los CBU o alias válidos posibles deben estar hardcodeados.
+  - TRANSFERIR debe pedir por un CBU (o alias) a transferir, preguntar cuánto se desea transferir y mostrar el dinero restante, si la transferencia es menor al dinero disponible y si el CBU es válido. Los CBU o alias válidos posibles (2 o 3) deben estar guardados en variables.
   - CAMBIAR PIN debe pedir primero por la contraseña nueva y luego por la contraseña original para confirmar el cambio
   - SALIR debe mostrar un mensaje de despedida
-  - En cualquier situación mostrar mensajes de lo que esté pasando, ya sean errores o operaciones exitosas
+  - En cualquier situación mostrar mensajes de lo que esté pasando operaciones exitosas
   
  **Ruleta**
 
@@ -224,8 +222,8 @@ Una vez elegida la opción e ingresado el valor si corresponde, debe mostrar un 
   - NEGRO: gana si el número es negro
   - PAR: gana si número es par
   - IMPAR: gana si el número es impar
-  - ALTO: gana si el número es menor o igual a 18
-  - BAJO: gana si el número es mayor a 18
+  - ALTA: gana si el número es menor o igual a 18
+  - BAJA: gana si el número es mayor a 18
   - PRIMERA DOCENA: gana si el número está incluido en la primera docena (del 1 al 12)
   - SEGUNDA DOCENA: gana si el número está incluido en la segunda docena (del 13 al 24)
   - TERCERA DOCENA: gana si el número está incluido en la tercera docena (del 25 al 36)
