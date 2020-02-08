@@ -3,6 +3,15 @@
  
 ## Bucle `for`
 
+**🔢 Números impares**
+- Crear un programa que muestre en consola los números impares entre el 0 y el 20
+
+**📀 Playlist**
+- Crear un programa que pida al usuario ingresar el nombre de una playlist y cuántas canciones desea agregar a la misma. Luego debe ir pidiendo agregar la cantidad de canciones elegidas de a una. Se debe ir mostrando la cantidad de canciones que quedan por agregar y la playlist con los temas hasta el momento a medida que se va a actualizando. Al finalizar mostrar un mensaje con el nombre de la playlist y la lista de canciones.
+
+**🔍 Número mayor o menor**
+- Crear un programa que pregunte si se desea buscar el mayor o el menor número de un conjunto. Luego, preguntar entre cuántos se desea buscar. Ir pidiendo ingresar uno por uno la cantidad de números que se eligió, y al finalizar mostrar el número mayor o menor de todos los ingresados según el elegido.
+
 **❗️ Factorial**
 - Crear un programa que pida ingresar un número, y muestre su factorial. Este se calcula multiplicando el mismo número y todos los números que le anteceden hasta el 1. Por ejemplo: 4 ⇒ 4 * 3 * 2 * 1 = 24 
 
@@ -18,9 +27,6 @@ Vuelta 3: 166s
 ⏱ Promedio: 144.45s
 ```
 
-**📀 Playlist**
-- Crear un programa que pida al usuario ingresar el nombre de una playlist y cuántas canciones desea agregar a la misma. Luego debe ir pidiendo agregar la cantidad de canciones elegidas de a una. Se debe ir mostrando la cantidad de canciones que quedan por agregar y la playlist con los temas hasta el momento a medida que se va a actualizando. Al finalizar mostrar un mensaje con el nombre de la playlist y la lista de canciones.
-
 **✊🤚✌️ Piedra, papel, tijera II**
 - Al ejercicio de **Piedra, papel, tijera** de *condicionales*, agregarle la posibilidad de jugar la cantidad de rondas que se deseen. Por cada ronda, se debe mostrar ambas jugadas (usuario y computadora), quién gano la ronda, puntaje parcial hasta el momento y rondas restantes. Al finalizar se debe indicar quién ganó. 
 Ejemplo:
@@ -31,4 +37,23 @@ Ronda: 2 de 5
 👾 Computadora: Tijera
 Jugadora ha ganado esta ronda 🎉
 Puntaje: 2 (Jugadora) - 0 (Computadora)
+```
+
+**📐 Patrón**
+- Crear un programa que muestre en consola el siguiente patrón
+
+```bash
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+***********
+************
+*************
 ```
