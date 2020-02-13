@@ -74,7 +74,7 @@ Puntaje: 2 (Jugadora) - 0 (Computadora)
 - Crear un programa que elija una palabra al azar de un conjunto de palabras posibles, y permita al usuario intentar adivinarla. Por cada intento sucesivo, el programa debe ir mostrando como pista la palabra de forma parcial, empezando con la primera letra y agregando una letra a la vez. El programa debe terminar cuando se adivina la palabra o se muestran todas las letras de la misma. Por ejemplo, si la palabra a adivinar es LOVELACE, mostrar como sugerencia primero L, luego LO, luego LOV, luego LOVE, luego LOVEL, etc.
 
 **🎾 Tenis**
-- Crear un programa para llevar la cuenta del puntaje de un partido de tenis. Debe pedir inicialmente por los nombres de las jugadoras, y luego ir pidiendo el nombre de la gnadodora de cada set, y mostrando el puntaje actualizado. Si alguna de las dos llega a los 3 puntos, el programa debe terminar y anunciar la ganadora
+- Crear un programa para llevar la cuenta del puntaje de un partido de tenis. Debe pedir inicialmente por los nombres de las jugadoras, y luego ir pidiendo el nombre de la ganadora de cada set, y mostrando el puntaje actualizado. Si alguna de las dos llega a los 3 puntos, el programa debe terminar y anunciar la ganadora
 
 **🧨 Explosión**
 - Crear un programa que permita ingresar una serie de números separados por espacio. El programa debe disminuyendo cada número en 1 por ronda e ir mostrando el resultado (en consola, o en un string concatenado) hasta que todos lleguen a 0 (cuando lleguen a no deben seguir disminuyendo) y se produzca la explosión. Ejemplo
@@ -89,6 +89,42 @@ Puntaje: 2 (Jugadora) - 0 (Computadora)
 **🎨 Simón dice II**
 - Replicar el juego de Simón dice. El programa debe mostrar una secuencia de colores, agregando por cada ronda que pase otro color más. El usuario debe ingresar los colores de la secuencia uno por uno. Si erra la secuencia (es decir, si ingresa algún color mal), el programa debe terminar. Los colores posibles son: rojo, azul, verde y amarillo. Hay dos variantes posibles: o el juego continúa indefinidamente hasta que se erra la secuencia, y muestra cuántas rondas se sobrevivió, o el programa permite elegir al principio cuántas rondas se desea hacer, y mostrar un mensaje de victoria si se llega a esa cantidad de rondas sin errarle a la secuencia.
 
+**Isla desierta**
+- Crear un programa que permita mover un barco hacia una isla. El programa debe permitir ingresar los valores AVANZAR o RETROCEDER, siendo que AVANZAR acerca el barco un espacio hacia la isla y RETROCEDER lo aleja. El programa debe terminar cuando el barco llega a la isla. Ejemplo:
+
+```
+⛵️🌊🌊🌊🏝
+// AVANZAR
+🌊⛵️🌊🌊🏝
+// AVANZAR
+🌊🌊⛵️🌊🏝
+// RETROCEDER
+🌊⛵️🌊🌊🏝
+// AVANZAR
+🌊🌊⛵️🌊🏝
+// AVANZAR
+🌊🌊🌊⛵️🏝
+¡Has llegado a la isla!
+```
+
+**🏧 ATM II**
+- Crear un programa que tenga un dinero inicial
+- El programa también deberá contar con un menú con las siguientes opciones:
+ - **EXTRAER:** debe pedir al usuario cuánto desea extraer y _si el dinero a extraer es menor o igual al saldo actual_, restar el dinero extraído al saldo
+ - **DEPOSITAR:** debe pedir al usuario la cantidad a ingresar y sumarla al saldo actual
+ - **CONSULTAR SALDO:** debe mostrar el saldo actual
+ - **VER ÚLTIMOS MOVIMIENTOS:** debe mostrar una lista de los últimos moviemientos realizados
+ - **SALIR:** debe terminar la ejecución del programa
+ - El programa debe mostrar el menú de opciones, y permitir ingresar una opción. Si la opción ingresada es incorrecta, debe mostrar nuevamente el menú. Si se elige SALIR, debe terminar el programa. Si se elige alguna de las otras opciones, debe realizar las acciones correspondientes, y una vez terminada, volver al menú de opciones. Las acciones de EXTRAER y DEPOSITAR y CONSULTAR SALDO deben registrarse cada vez que se realicen para poder consultarse luego, por ejemplo:
+
+```
+ ULTIMOS MOVIMIENTOS
+ - Depositado: $550
+ - Extraido: $1000
+ - Consultado saldo: $3400
+ - Depositado: $100
+```
+
 **📝 Lista de tareas**
 - Crear un programa que tenga un menú con las siguientes opciones:
  - **AGREGAR TAREA:** debe pedir al usuario ingresar una tarea y agregarla a la lista de tareas
@@ -96,4 +132,5 @@ Puntaje: 2 (Jugadora) - 0 (Computadora)
  - **ELIMINAR TAREA:** debe pedir al usuario ingresar el número de tarea a eliminar, mostrarla, y pedirle confirmar si desea eliminarla o no
  - **VER TAREAS:** debe listar todas las tareas hasta el momento
  - **SALIR:** debe terminar la ejecución del programa
- El programa debe mostrar el menú de opciones, y permitir ingresar una opción. Si la opción ingresada es incorrecta, debe mostrar nuevamente el menú. Si se elige SALIR, debe terminar el programa. Si se elige alguna de las otras opciones, debe realizar las acciones correspondientes, y una vez terminada, volver al menú de opciones.
+ - El programa debe mostrar el menú de opciones, y permitir ingresar una opción. Si la opción ingresada es incorrecta, debe mostrar nuevamente el menú. Si se elige SALIR, debe terminar el programa. Si se elige alguna de las otras opciones, debe realizar las acciones correspondientes, y una vez terminada, volver al menú de opciones.
+
