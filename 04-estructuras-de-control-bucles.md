@@ -110,12 +110,12 @@ Puntaje: 2 (Jugadora) - 0 (Computadora)
 **🏧 ATM II**
 - Crear un programa que tenga un dinero inicial
 - El programa también deberá contar con un menú con las siguientes opciones:
- - **EXTRAER:** debe pedir al usuario cuánto desea extraer y _si el dinero a extraer es menor o igual al saldo actual_, restar el dinero extraído al saldo
- - **DEPOSITAR:** debe pedir al usuario la cantidad a ingresar y sumarla al saldo actual
- - **CONSULTAR SALDO:** debe mostrar el saldo actual
- - **VER ÚLTIMOS MOVIMIENTOS:** debe mostrar una lista de los últimos moviemientos realizados
- - **SALIR:** debe terminar la ejecución del programa
- - El programa debe mostrar el menú de opciones, y permitir ingresar una opción. Si la opción ingresada es incorrecta, debe mostrar nuevamente el menú. Si se elige SALIR, debe terminar el programa. Si se elige alguna de las otras opciones, debe realizar las acciones correspondientes, y una vez terminada, volver al menú de opciones. Las acciones de EXTRAER y DEPOSITAR y CONSULTAR SALDO deben registrarse cada vez que se realicen para poder consultarse luego, por ejemplo:
+  - **EXTRAER:** debe pedir al usuario cuánto desea extraer y _si el dinero a extraer es menor o igual al saldo actual_, restar el dinero extraído al saldo
+  - **DEPOSITAR:** debe pedir al usuario la cantidad a ingresar y sumarla al saldo actual
+  - **CONSULTAR SALDO:** debe mostrar el saldo actual
+  - **VER ÚLTIMOS MOVIMIENTOS:** debe mostrar una lista de los últimos moviemientos realizados
+  - **SALIR:** debe terminar la ejecución del programa
+- El programa debe mostrar el menú de opciones, y permitir ingresar una opción. Si la opción ingresada es incorrecta, debe mostrar nuevamente el menú. Si se elige SALIR, debe terminar el programa. Si se elige alguna de las otras opciones, debe realizar las acciones correspondientes, y una vez terminada, volver al menú de opciones. Las acciones de EXTRAER y DEPOSITAR y CONSULTAR SALDO deben registrarse cada vez que se realicen para poder consultarse luego, por ejemplo:
 
 ```
  ULTIMOS MOVIMIENTOS
@@ -127,10 +127,29 @@ Puntaje: 2 (Jugadora) - 0 (Computadora)
 
 **📝 Lista de tareas**
 - Crear un programa que tenga un menú con las siguientes opciones:
- - **AGREGAR TAREA:** debe pedir al usuario ingresar una tarea y agregarla a la lista de tareas
- - **MODIFICAR TAREA:** debe pedir al usuario ingresar el número de tarea que se desea modificar, mostrarla, y pedir que ingrese la tarea a reemplazarla o modificarla
- - **ELIMINAR TAREA:** debe pedir al usuario ingresar el número de tarea a eliminar, mostrarla, y pedirle confirmar si desea eliminarla o no
- - **VER TAREAS:** debe listar todas las tareas hasta el momento
- - **SALIR:** debe terminar la ejecución del programa
- - El programa debe mostrar el menú de opciones, y permitir ingresar una opción. Si la opción ingresada es incorrecta, debe mostrar nuevamente el menú. Si se elige SALIR, debe terminar el programa. Si se elige alguna de las otras opciones, debe realizar las acciones correspondientes, y una vez terminada, volver al menú de opciones.
+  - **AGREGAR TAREA:** debe pedir al usuario ingresar una tarea y agregarla a la lista de tareas
+  - **MODIFICAR TAREA:** debe pedir al usuario ingresar el número de tarea que se desea modificar, mostrarla, y pedir que ingrese la tarea a reemplazarla o modificarla
+  - **ELIMINAR TAREA:** debe pedir al usuario ingresar el número de tarea a eliminar, mostrarla, y pedirle confirmar si desea eliminarla o no
+  - **VER TAREAS:** debe listar todas las tareas hasta el momento
+  - **SALIR:** debe terminar la ejecución del programa
+- El programa debe mostrar el menú de opciones, y permitir ingresar una opción. Si la opción ingresada es incorrecta, debe mostrar nuevamente el menú. Si se elige SALIR, debe terminar el programa. Si se elige alguna de las otras opciones, debe realizar las acciones correspondientes, y una vez terminada, volver al menú de opciones.
 
+**👾 Monstruo**
+- Crear un juego de combate contra un monstruo. El juego debe contar con las siguientes variables:
+  - Vida jugadora 
+  - Vida monstruo 
+  - Cantidad de pociones
+  - Ataque máximo jugadora
+  - Ataque máximo monstruo
+  - Curación máxima poción
+- Todos los valores anteriores deben ser números enteros
+- El juego debe tener las siguientes acciones posibles:
+  - **ATACAR MONSTRUO:** genera un número aleatorio entre 1 y `Ataque máximo jugadora` y lo resta a `Vida monstruo`
+  - **TOMAR POCION:** genera un número aleatorio entre 1 y `Curación máxima poción` y lo suma a `Vida jugadora` y resta 1 a `Cantidad de pociones`
+  - **BUSCAR POCION:** genera un número entre 1 y 4, si sale 1 suma una poción, sino no encuentra nada
+  - **SALIR:** termina el programa
+- En todo momento se debe mostrar un mensaje de lo que está pasando
+- Luego de cada acción, el monstruo ataca a la jugadora y le resta a `Vida jugadora` un número aleatorio entre 1 y `Ataque máximo monstruo`
+- Luego del ataque del monstruo, se debe mostrar la vida de ambos
+- El programa termina cuando o la jugadora o el monstruo se quedan con vida igual o menor a 0
+- Mostrar un mensaje con el resultado final
