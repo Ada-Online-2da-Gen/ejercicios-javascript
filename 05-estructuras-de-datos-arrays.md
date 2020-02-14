@@ -274,7 +274,7 @@ Ejemplo:
 ```
 
 **Buscaminas**
-- Crear un programa que dado un array 2d permita ingresar una coordenada (representando los índices del array) ...
+- Crear un programa que dado un array 2d permita ingresar una coordenada (representando los índices del array), y mostrar si era una casilla vacía o tenía una mina. En caso de que tenga una casilla vacía, debe poder seguir jugando e ingresando casillas. Si descubre todas las casillas vacías o elige una con una mina, el juego debe terminar, e indicar si perdió o ganó. Las minas y casillas vacías (ocultas y descubiertas) pueden representarse con emojis con con números o letras.
 
 ```javascript
 const tablero = 
@@ -312,7 +312,27 @@ const tablero =
     5. Si responde que no, preguntar si desea ingresar otra categoría
     6. Si responde que sí, volver al punto 1
     7. Si responde que no, terminar el programa
-En todo momento (en cada mensaje), el programa debe mostrar las tareas agrupadas por categorías. Las categorías deben diferenciarse de las tareas (se pueden usar divisores, emojis, espacios, etc).
+En todo momento (en cada mensaje), el programa debe mostrar las tareas agrupadas por categorías. Las categorías deben diferenciarse de las tareas (se pueden usar divisores, emojis, espacios, etc). Ejemplo:
+
+```
+Lista de Tareas
+
+SUPERMERCADO
+----------------------
+👉 Comprar harina
+👉 Comprar gaseosa
+👉 Comprar aceite
+
+FACULTAD
+----------------------
+👉 Sacar apuntes
+👉 Anotarse para final
+
+MICHI
+----------------------
+👉 Comprar comida
+👉 Llevar a veterinaria 
+```
 
 **Viborita**
 
