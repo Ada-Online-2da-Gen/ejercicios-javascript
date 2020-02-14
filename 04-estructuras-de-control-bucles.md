@@ -142,7 +142,7 @@ Puntaje: 2 (Jugadora) - 0 (Computadora)
   - Ataque máximo jugadora
   - Ataque máximo monstruo
   - Curación máxima poción
-- Todos los valores anteriores deben ser números enteros
+- Todos los valores anteriores deben ser números enteros (elijanlos ustedes)
 - El juego debe tener las siguientes acciones posibles:
   - **ATACAR MONSTRUO:** genera un número aleatorio entre 1 y `Ataque máximo jugadora` y lo resta a `Vida monstruo`
   - **TOMAR POCION:** genera un número aleatorio entre 1 y `Curación máxima poción` y lo suma a `Vida jugadora` y resta 1 a `Cantidad de pociones`
