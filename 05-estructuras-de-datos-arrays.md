@@ -247,10 +247,10 @@ Ejemplo:
 
 ```javascript
 [
-  [🍎, 🍏, 🍌, 🍌],
-  [🍌, 🍎],
-  [🍎, 🍏, 🍌],
-  [🍏, 🍌, 🍎, 🍌]
+  ['🍎', '🍏', '🍌', '🍌'],
+  ['🍌', '🍎'],
+  ['🍎', '🍏', '🍌'],
+  ['🍏', '🍌', '🍎', '🍌']
 ]
 
 // Cantidad de 🍎: 4
@@ -279,9 +279,9 @@ Ejemplo:
 ```javascript
 const tablero = 
 [
-  [📦, 💣, 💣],
-  [📦, 📦, 📦],
-  [💣, 📦, 📦]
+  ['📦', '💣', '💣'],
+  ['📦', '📦', '📦'],
+  ['💣', '📦', '📦']
 ] 
 
 📦 📦 📦
@@ -335,7 +335,24 @@ MICHI
 ```
 
 **Viborita**
+- Crear un programa que permita controlar una viborita. 
+    - El programa debe mostrar el tablero en todo momento. 
+    - Debe permitir ingresar las direcciones para donde desea mover la víbora: ARRIBA, DERECHA, ABAJO, IZQUIERDA, y moverla en consecuencia. 
+    - El objetivo es comer todas las manzanas, el juego termina cuando no hay más manzanas. 
+    - Para comer una manzana, debe moverse hacia ella.
+    - Si la vibora llega esta en el borde del tablero, y se mueve hacia este, debe aparecer del otro lado del mismo.
 
+```javascript    
+const tablero = 
+[
+    ['🌱', '🌱', '🌱', '🌱', '🌱'],
+    ['🌱', '🌱', '🌱', '🌱', '🌱'],
+    ['🌱', '🌱', '🌱', '🌱', '🌱'],
+    ['🌱', '🌱', '🌱', '🌱', '🌱'],
+    ['🌱', '🌱', '🌱', '🌱', '🌱'],
+    ['🌱', '🌱', '🌱', '🌱', '🌱'],    
+]
+```    
 **Canciones y Artistas**
 - Crear un programa con las siguientes posibles acciones:
     - **AGREGAR CANCION:** debe permitir ingresar el nombre de una canción y le artista, separado por coma, por ejemplo: `Africa, Toto`
