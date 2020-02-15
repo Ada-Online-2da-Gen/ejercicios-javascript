@@ -341,21 +341,24 @@ MICHI
     - El objetivo es comer todas las manzanas, el juego termina cuando no hay más manzanas. 
     - Para comer una manzana, debe moverse hacia ella.
     - Si la vibora llega esta en el borde del tablero, y se mueve hacia este, debe aparecer del otro lado del mismo.
+    - Si se intenta avanzar a un casillero bloqueado (en el ejemplo, un ladrillo) no debe poder avanzar.
+    - En vez de emojis se pueden usar letras.
 
 ```javascript    
 const tablero = 
 [
-    ['🌱', '🌱', '🌱', '🌱', '🌱'],
-    ['🌱', '🌱', '🌱', '🌱', '🌱'],
-    ['🌱', '🌱', '🌱', '🌱', '🌱'],
-    ['🌱', '🌱', '🌱', '🌱', '🌱'],
-    ['🌱', '🌱', '🌱', '🌱', '🌱'],
-    ['🌱', '🌱', '🌱', '🌱', '🌱'],    
+    ['🌱', '🌱', '🍎', '🌱', '🌱'],
+    ['🍎', '🧱', '🌱', '🧱', '🍎'],
+    ['🌱', '🧱', '🐍', '🌱', '🌱'],
+    ['🌱', '🍎', '🌱', '🧱', '🌱'],
+    ['🍎', '🌱', '🌱', '🍎', '🧱'],
+    ['🌱', '🌱', '🌱', '🌱', '🍎'],    
 ]
-```    
+```
+    
 **Canciones y Artistas**
-- Crear un programa con las siguientes posibles acciones:
+- Crear un programa con las siguientes posibles acciones. Una vez realizada la acción, debe volver al menú de opciones para elegir una nueva.
     - **AGREGAR CANCION:** debe permitir ingresar el nombre de una canción y le artista, separado por coma, por ejemplo: `Africa, Toto`
-    - **BUSCAR CANCIONES:** debe permitir ingresar el nombre de une artiste y mostrar una lista con sus canciones que (hay ingresadas) 
-    - **LISTAR ARTISTAS:** debe mostrar una lista con todes les artistes
-    - **SALIR:** debe terminar la ejecución del programa
+    - **BUSCAR CANCIONES:** debe permitir ingresar el nombre de une artiste y mostrar una lista con todas sus canciones que (hay ingresadas) 
+    - **LISTAR ARTISTAS:** debe mostrar una lista con todes les artistes (solo los nombres)
+    - **SALIR:** debe terminar la ejecución del programa    
