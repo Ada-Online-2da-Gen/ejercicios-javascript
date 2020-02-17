@@ -13,6 +13,7 @@ Crear las siguientes funciones
  * @example
  *  isOdd(3) // returns true
  */
+```
 
 ```javascript
 /**
