@@ -123,3 +123,45 @@ Crear las siguientes funciones
  *  getFactorial(4) // returns 24
  */
 ```
+
+
+```javascript
+/**
+ * @name areArraysEqual
+ * @description Devuelve si dos arrays son iguales (tienen los mismos ítems en el mismo orden)
+ *
+ * @param {[]} a 
+ * @param {[]} b 
+ * @returns {Boolean} - Devuelve true si ambos arrays son iguales, false sino
+ *
+ * @example
+ *  areArraysEqual([1, 4], [1, 4]) // returns true
+ */
+```
+
+```javascript
+/**
+ * @name toHackerSpeak
+ * @description Convierte un string a "Hacker Speak". Para hacerlo, tiene que transformar las "a" en 4, las "e" en 3, las "i"
+ * en 1, las "o" en 0 y las "s" en 5
+ *
+ * @param {string} text 
+ * @returns {String} - El texto convertido a "Hacker Speak"
+ * 
+ * @example
+ *  toHackerSpeak("I'm a hacker now") // returns "1'm 4 h4ack3r n0w"
+ */
+```
+
+```javascript
+/**
+ * @name getFileExtension
+ * @description Obtiene la extensión de un archivo
+ *
+ * @param {string} file - El nombre del archivo a obtener la extensión 
+ * @returns {String} - La extensión del archivo
+ * 
+ * @example
+ *  getFileExtension("imagen.jpg") // returns "jpg"
+ */
+```
