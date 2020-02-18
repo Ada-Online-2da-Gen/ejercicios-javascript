@@ -7,8 +7,8 @@ Crear las siguientes funciones
  * @name isOdd
  * @description Devuelve si un número es impar
  * 
- * @param {number} number - El número a evaluar
- * @returns {Boolean} Devuelve true si el número {number} es impar, false sino
+ * @param {number} x - El número a evaluar
+ * @returns {Boolean} Devuelve true si el número {x} es impar, false sino
  *
  * @example
  *  isOdd(3) // returns true
