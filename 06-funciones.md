@@ -20,7 +20,7 @@ Crear las siguientes funciones
  * @name inRange
  * @description Devuelve si un número se encuentra dentro de un rango
  * 
- * @param {number} x - El número a evaluar si encuentra dentro del rango
+ * @param {number} x - El número a evaluar si se encuentra dentro del rango
  * @param {number} min - El límite inferior del rango
  * @param {number} max - El límite superior del rango
  * @returns {Boolean} Devuelve true si el número {x} se encuentra dentro del rango definido por {min} y {max}, false sino
@@ -99,7 +99,7 @@ Crear las siguientes funciones
 ```javascript
 /**
  * @name filterNumbersGreaterThan
- * @description Filtra los números de un array que sean mayor a cierta número x dejando sólo los que sean menores a este
+ * @description Filtra los números de un array que sean mayor a cierto número x dejando solo los que sean menores a este
  *
  * @param {number[]} numbers - Array de números a filtrar
  * @param {number} filter - Número a partir del cuál filtrar los demás números
@@ -110,19 +110,6 @@ Crear las siguientes funciones
  */
 ```
 
-```javascript
-/**
- * @name filterNumbersGreaterThan
- * @description Filtra los números de un array que sean mayor a cierta número x dejando sólo los que sean menores a este
- *
- * @param {number[]} numbers - Array de números a filtrar
- * @param {number} filter - Número a partir del cuál filtrar los demás números
- * @returns {Number[]} - Array de números filtrados menores a {filter}
- *
- * @example
- *  filterNumbersGreaterThan([3, 8, 12, 1, 7, 4], 7) // returns [3, 1, 4]
- */
-```
 
 ```javascript
 /**
