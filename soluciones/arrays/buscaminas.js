@@ -7,6 +7,7 @@ const tablero =
 
 let cajasRestantes = 0;
 let escogeBomba = false;
+
 // Obtengo la cantidad de cajas al inicio de la partida
 
 for (let i = 0; i < tablero.length; i++) {
