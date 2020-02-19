@@ -1,13 +1,3 @@
-Crear un programa que permita controlar una viborita.
-El programa debe mostrar el tablero en todo momento.
-Debe permitir ingresar las direcciones para donde desea mover la víbora: ARRIBA, DERECHA, ABAJO, IZQUIERDA, y moverla en consecuencia.
-El objetivo es comer todas las manzanas, el juego termina cuando no hay más manzanas.
-Para comer una manzana, debe moverse hacia ella.
-Si la vibora llega esta en el borde del tablero, y se mueve hacia este, debe aparecer del otro lado del mismo.
-Si se intenta avanzar a un casillero bloqueado (en el ejemplo, un ladrillo) no debe poder avanzar.
-En vez de emojis se pueden usar letras.
-
-
 const tablero = 
 [
     ['🌱', '🌱', '🍎', '🌱', '🌱'],
@@ -85,6 +75,7 @@ while (manzanasRestantes > 0) {
           posXSerpiente = j;
           posYSerpiente = i;
         }
+      }  
     }
 
     // Obtengo nueva futura posición en base a posición actual más movimiento
