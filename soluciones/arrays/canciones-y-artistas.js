@@ -20,6 +20,7 @@ while(!programaFinalizado) {
     case 'BUSCAR CANCIONES':
       const artista = prompt('Ingrese el nombre de une artista');
       let listaCanciones = `Canciones de ${artista}\n`;
+      // Recorro la lista de canciones, si le artista coincide con el buscado, concateno el nombre de la canción
       for (let i = 0; i < canciones.length; i++) {
         if (canciones[i][1] === artista) {
           listaCanciones += canciones[i][0] + '\n'; 
@@ -31,7 +32,8 @@ while(!programaFinalizado) {
     case 'LISTAR ARTISTAS':
       const artistas = [];
       let listaArtistas = 'Artistas: \n';
-      // Recorro el array de canciones y obtengo el artista. Si el artista no se encuentra en el array artistas, lo agrego y         // concanteno su nombre
+      // Recorro el array de canciones y obtengo el artista. Si el artista no se encuentra en el array artistas, lo agrego y         
+      // concanteno su nombre
       for (let i = 0; i < canciones.length; i++) {
         if (artistas.indexOf(canciones[i][1]) === -1) {
           artistas.push(canciones[i][1]);
