@@ -12,19 +12,19 @@ const tablero =
 const bordeVerticalTablero = tablero.length - 1;
 const bordeHorizontalTablero = tablero[0].length - 1;
 
-let manzanasRestantes = 0;
+let manzanas = 0;
 
 // Obtengo la cantidad de manzanas al inicio de la partida
 
 for (let i = 0; i < tablero.length; i++) {
   for (let j = 0; j < tablero[i].length; j++) {
     if (tablero[i][j] === '🍎') {
-      manzanasRestantes++;
+      manzanas++;
     }
   }
 }
 
-while (manzanasRestantes > 0) {
+while (manzanas > 0) {
   // Obtengo tablero actual
   
   let tableroActual = '';
@@ -101,7 +101,7 @@ while (manzanasRestantes > 0) {
     // Si en la futura posición hay una manzana, resto uno a la cantidad de manzanas disponibles
 
     if (tablero[nuevaPosY][nuevaPosX] === '🍎') {
-      manzanasDisponibles--;
+      manzanas--;
     }
     
     // Si la futura posición no está bloqueada, actualizo el tablero
