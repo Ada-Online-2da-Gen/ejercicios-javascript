@@ -33,13 +33,13 @@ while(cajasRestantes > 0 && !escogeBomba) {
     tableroActual += '\n';
   }  
   
-  const jugada = prompt(`Ingrese las coordenadas x e y separadas por espacio, por ejemplo: 0 1 \n ${tableroActual}`);
+  const jugada = prompt(`Ingrese las coordenadas x e y separadas por espacio, por ejemplo: 0 1 \n${tableroActual}`);
   
   const coordenadas = jugada.split(' ');
   const x = coordenadas[0];
   const y = coordenadas[1];
   
-  const jugadaValida = tablero[y] !== undefined && tablero[y][x] !== undefined;
+  const jugadaValida = tablero[y] !== undefined && tablero[y][x] !== undefined && tablero[y][x] !== '💨';
   
   if (jugadaValida && tablero[y][x] === '📦') {
     alert('¡Casilla vacía!¡Te has salvado!');
@@ -62,9 +62,9 @@ let tableroFinal = '';
 
 for (let i = 0; i < tablero.length; i++) {
   for (let j = 0; j < tablero[i].length; j++) {
-    tableroActual += tablero[i][j];
+    tableroFinal += tablero[i][j];
   }
-  tableroActual += '\n';
+  tableroFinal += '\n';
 }
 
 let resultadoFinal = '';
