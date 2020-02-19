@@ -30,12 +30,12 @@ while(cajasRestantes > 0 && !juegoTerminado) {
     alert('¡Casilla vacía!¡Te has salvado!');
     tablero[y][x] = '💨';
     cajasRestantes--;
-  }
-
-  if (tablero[y][x] === '💣') {
+  } else if (tablero[y][x] === '💣') {
     alert('¡Oh no!¡Era una bomba!¡Has perdido!');
     tablero[y][x] = '💥';
     juegoTerminado = true;
+  } else {
+    alert('Esa no es una jugada válida');
   }
   
   if (cajasRestantes === 0) {
