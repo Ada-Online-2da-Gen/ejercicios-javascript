@@ -33,7 +33,7 @@ while(cajasRestantes > 0 && !escogeBomba) {
     tableroActual += '\n';
   }  
   
-  const jugada = prompt(`Ingrese las coordenadas x e y separadas por espacio, por ejemplo: 0 1 \n ${tableroActual}');
+  const jugada = prompt(`Ingrese las coordenadas x e y separadas por espacio, por ejemplo: 0 1 \n ${tableroActual}`);
   
   const coordenadas = jugada.split(' ');
   const x = coordenadas[0];
@@ -76,7 +76,6 @@ if (cajasRestantes === 0) {
 if (escogeBomba) {
   resultadoFinal = '¡Oh no!¡Era una bomba!¡Has perdido!\n';
 }
-
 
 alert(resultadoFinal + tableroFinal);
 
