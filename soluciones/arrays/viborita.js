@@ -116,3 +116,5 @@ while (manzanas > 0) {
     alert('Por favor ingrese una opción correcta');
   }
 }
+
+alert('¡Felicitaciones! Has ganado 🎉🎉🎉');
