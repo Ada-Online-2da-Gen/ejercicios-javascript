@@ -18,7 +18,7 @@ let manzanasRestantes = 0;
 
 for (let i = 0; i < tablero.length; i++) {
   for (let j = 0; j < tablero[i].length; j++) {
-    if (tablero[i][j] === '📦') {
+    if (tablero[i][j] === '🍎') {
       manzanasRestantes++;
     }
   }
