@@ -26,19 +26,21 @@ while(cajasRestantes > 0 && !juegoTerminado) {
   const x = coordenadas[0];
   const y = coordenadas[1];
   
-  if (tablero[y][x] === '📦') {
+  const jugadaValida = tablero[y] !== undefined && tablero[y][x] !== undefined;
+  
+  if (jugadaValida && tablero[y][x] === '📦') {
     alert('¡Casilla vacía!¡Te has salvado!');
     tablero[y][x] = '💨';
     cajasRestantes--;
   } 
 
-  if (tablero[y][x] === '💣') {
+  if (jugadaValida && tablero[y][x] === '💣') {
     alert('¡Oh no!¡Era una bomba!¡Has perdido!');
     tablero[y][x] = '💥';
     juegoTerminado = true;
   } 
   
-  if (tablero[y] === undefined || tablero[y][x] === undefined) {
+  if (!jugadaValida) {
     alert('Esa no es una jugada válida');
   }
   
