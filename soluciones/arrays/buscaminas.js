@@ -42,13 +42,18 @@ while(cajasRestantes > 0 && !juegoTerminado) {
     alert('¡Felicitaciones! Has ganado.')
   }
   
-  // Muestro el tablero
+  // Muestro el tablero, recorriéndolo y concantenándolo en un string
+
   let tableroActual = '';
   for (let i = 0; i < tablero.length; i++) {
     for (let j = 0; j < tablero[i].length; j++) {
-      tableroActual += tablero[i][j];
+      // Si es una bomba muestro una caja, sino lo que haya en esa casilla
+      tableroActual += tablero[i][j] === '💣' ? '📦' : tablero[i][j];
     }
+    // Por cada fila inserto una nueva línea
     tableroActual += '\n';
   }
+  
+  alert(tableroActual);
 }
 
