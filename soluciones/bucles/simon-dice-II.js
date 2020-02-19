@@ -15,9 +15,11 @@ while(!juegoTerminado) {
   alert(`Ronda ${secuencia.length}. La secuencia actual es: ${secuencia}`);
   
   for(let i = 0; i < secuencia.length; i++) {
-      const jugada = prompt(`Ingrese un color (${colores}):`);
-      if (jugada !== secuencia[i]) {
-        juegoTerminado = true;
+      if (!juegoTerminado) {
+        const jugada = prompt(`Ingrese un color (${colores}):`);
+        if (jugada !== secuencia[i]) {
+          juegoTerminado = true;
+        }
       }
   }
 }
