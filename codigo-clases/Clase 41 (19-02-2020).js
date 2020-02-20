@@ -47,14 +47,14 @@ const casillaContiene = (elemento, x, y, tablero) => {
   return esJugadaValida(x, y, tablero) && tablero[y][x] === elemento;
 }
 
-const pedirCoodernadas = (mensaje, tablero) => {
+const obtenerCoodernadas = (mensaje, tablero) => {
   const tableroActual = obtenerTableroActual(tablero);
   const jugada = prompt(`${mensaje}\n${tableroActual}`);
   return jugada.split(' ');
 }
 
 const jugar = (tablero) => {
-  const coordenadas = pedirCoodernadas('Ingrese las coordenadas x e y separadas por espacio, por ejemplo: 0 1', tablero);
+  const coordenadas = obtenerCoodernadas('Ingrese las coordenadas x e y separadas por espacio, por ejemplo: 0 1', tablero);
   const x = coordenadas[0];
   const y = coordenadas[1];
   
