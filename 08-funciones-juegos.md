@@ -7,7 +7,7 @@
 - Por ejemplo
 
 ```
-🔴🔵🟢🟡| CODIGO
+🔴🔵🟢🟡| CODIGO    // El código se muestra al final
 -----------------
 🔴🔵🟢🟡| ⚫️⚫️⚫️⚫️ // rojo, azul, verde y amarillo en posición correcta -> CODIGO DESCIFRADO
 🟤🔵🟢🟡| ⚫️⚫️⚫️   // azul, verde y amarillo en posición correcta, marrón no está
