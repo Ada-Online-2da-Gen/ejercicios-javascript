@@ -3,8 +3,7 @@
 ## Mente maestra
 
 - El juego consiste en lo siguiente: se genera un *código secreto* con una combinación de colores (pueden usarse en vez de colores letras, números o emojis) _sin repetir_, la jugadora debe descubrir el *código secreto* intentando distintas combinaciones. Cada vez que se prueba una combinación, se obtiene una pista de qué tanto se acertó el código, a partir de esa pista, se puede hacer un nuevo intento ahora con más información. El juego termina cuando se queda sin intentos por adivinar o se acierta el código.
-- A cada intento de descifrar el código, se tiene que dar una pista que consiste en lo siguiente: una bola negra por cada color que esté en posición correcta, y una bola negra por cada color que esté en el código en posición incorrecta. Si un color no está en el código, no se debe dar nada en específico para ese color.
-- Por ejemplo
+- A cada intento de descifrar el código, se tiene que dar una pista que consiste en lo siguiente: una bola negra por cada color que esté en posición correcta, y una bola negra por cada color que esté en el código en posición incorrecta. Si un color no está en el código, no se debe dar nada en específico para ese color. Por ejemplo:
 
 ```
 🔴🔵🟢🟡| CODIGO    // El código se muestra al final
