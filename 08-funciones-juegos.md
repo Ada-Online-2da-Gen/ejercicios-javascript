@@ -112,6 +112,7 @@ Ejemplo:
 13 14 15 *
 ```
 
+[Rompecabezas deslizante puzzle](https://www.helpfulgames.com/subjects/brain-training/sliding-puzzle.html)
 
 
 ## 4 en línea
