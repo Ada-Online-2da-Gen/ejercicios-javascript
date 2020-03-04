@@ -22,10 +22,6 @@
 4. Debe aceptar varios movimientos y devolver el resultado final de ese movimiento
 5. Debe arrojar un error si un movimiento no es válido o si las coordenadas iniciales son inválidas
 
-## Validadora de tarjeta
-
-1. Crear una función que valide una tarjeta de crédito
-
 ## Algoritmo de Luhn
 
 Se utiliza para verificar la validez de una tarjeta, pin, etc. Crear una función que devuelva si un número pasa el algoritmo de Luhn o no.
