@@ -8,7 +8,7 @@
 3. Permitir a la función aceptar otros delimitadores en vez de coma
     * el delimitador se pasa por parámetro
     * el delimitador es opcional
-    * el delimitador defecto es una coma
+    * el delimitador por defecto es una coma
 6. Si se pasa un número negativo, debe tirar una excepción
     * la excepción debe indicar qué número negativo se pasó
     * si hay más de un número negativo, debe indicarlos a todos en la excepción
