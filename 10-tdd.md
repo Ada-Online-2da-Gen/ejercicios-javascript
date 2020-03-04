@@ -9,9 +9,9 @@
     * el delimitador se pasa por parámetro
     * el delimitador es opcional
     * el delimitador por defecto es una coma
-6. Si se pasa un número negativo, debe tirar una excepción
-    * la excepción debe indicar qué número negativo se pasó
-    * si hay más de un número negativo, debe indicarlos a todos en la excepción
+6. Si se pasa un número negativo, debe tirar un error
+    * el error debe indicar qué número negativo se pasó
+    * si hay más de un número negativo, debe indicarlos a todos en el error
 7. Números mayores a 1000 deben ser ignorados
 
 ## Movimiento en Tablero
