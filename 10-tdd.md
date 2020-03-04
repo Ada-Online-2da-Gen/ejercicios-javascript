@@ -14,6 +14,14 @@
     * si hay más de un número negativo, debe indicarlos a todos en la excepción
 7. Números mayores a 1000 deben ser ignorados
 
+## Movimiento en Tablero
+
+1. Crear una función que acepte un array 2d, unos índices (de array) correspondientes a coordenadas y un movimiento posible que puede ser: ARRIBA, ABAJO, DERECHA, IZQUIERDA (como string, dentro de un array)
+2. Debe devolver el valor de la casilla correspondiente a mover las coordenadas actuales en la dirección que se pidió
+3. Si está en algún borde, debe pasar al otro lado
+4. Debe aceptar varios movimientos y devolver el resultado final de ese movimiento
+5. Debe arrojar un error si un movimiento no es válido o si las coordenadas iniciales son inválidas
+
 ## Validadora de tarjeta
 
 1. Crear una función que valide una tarjeta de crédito
