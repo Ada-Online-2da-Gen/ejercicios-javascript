@@ -50,6 +50,8 @@ Crear una función que determine si una tarjeta es válida o no
     - MasterCard: Comienza con 51, 52, 53, 54 o 55, tiene 16 dígitos.
 4. Debe devolver un string con el tipo de la tarjeta, o "invalid" si no es una tarjeta válida
 
+[Números de tarjeta de prueba](https://www.freeformatter.com/credit-card-number-generator-validator.html#fakeNumbers)
+
 ## Paginador
 
 Crear una función que devuelva una páginacion
