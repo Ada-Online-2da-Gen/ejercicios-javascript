@@ -11,6 +11,14 @@ const size = { width: 2, length: 5, height: 1 }
 getBoxVolume(size) // returns 10
 ```
 
+## Redondeo
+
+- Hacer una función que dado un número, devuelva un objeto con el número redondeado hacia abajo (`Math.floor`), hacia arriba (`Math.ceil`) y dependiendo de su punto flotante (`Math.round`)
+
+```javascript
+round(13.3) //  returns { floor: 13, ceil: 14, round: 13 }
+```
+
 ## Unión de objetos
 
 - Crear una función que dos objetos como argumentos, y devuelva un objeto que sea la unión de ambos. Es decir, debe contener las propiedades de ambos objetos. Para aquellas propiedades que están compartidas entre ambos, como un objeto no puede tener propiedades repetidas, se debe priorizar el objeto del primer parámetro.
@@ -61,6 +69,16 @@ const money = 115
 buyProducts(money, products) // returns { cookies: true, chocolate: true, soda: false}
 ```
 
+## Comprar lista de productos
+
+- Crear una función que dado un objeto con productos y precios, y la cantidad de dinero disponible, `true` si puede comprarlos a todos o `false` si no
+
+```javascript
+const products = { cookies: 60, chocolate: 110, soda: 120, }
+const money = 300
+canBuyAllProduct(money, products) // returns true
+```
+
 ## Obtener experiencia
 
 - Crear una función que dado un objeto que contenga niveles de experiencia y puntaje por cada nivel, y un objeto con la cantidad de desafíos realizados por cada nivel, devuelva la cantidad total de experiencia obtenida
@@ -76,10 +94,16 @@ getXP(challenges, score) // returns 630 (3 * 10 + 4 * 50 + 2 * 100)
 - Crear una función que dado un string devuelva un objeto con la cantidad de letras, espacios y números que contiene. Cualquier cosa que no sea un número o un espacio cuenta como una letra
 
 ```javascript
-getStringInfo("H3ll0 Wor1d") // returns {"LETTERS:  7, DIGITS: 3, SPACES: 1 }
+getStringInfo("H3ll0 Wor1d") // returns { LETTERS:  7, DIGITS: 3, SPACES: 1 }
 ```
 
-**EXTRA:** averiguar cómo chequear si un string es una letra o no y usarlo para que diferencie entre letras, números y símbolos
+## Analizando párrafos
+
+- Crear una función que dado un string devuelva un objeto con la cantidad de letras, palabras y oraciones.
+
+```javascript
+getParagraphInfo("Do. Or do not. There is no try.") // returns { LETTERS:  21, WORDS: 8, SENTENCE: 3 }
+```
 
 ## Contar palabras
 
@@ -87,6 +111,14 @@ getStringInfo("H3ll0 Wor1d") // returns {"LETTERS:  7, DIGITS: 3, SPACES: 1 }
 
 ```javascript
 countWords("El que compra pocas capas pocas capas paga") // returns { el: 1, que: 1, compra: 1, pocas: 2, capas: 2, paga: 1 }
+```
+
+## Parámetros de búsqueda
+
+Los parámetros de búsqueda en una URL son aquellos que vienen después del signo `?` y se escriben como `parametro=valor`, separados por el signo `&`. Crear una función que dada una URL, devuelva un objeto con cada parámetro como clave con su respectivo valor.
+
+```javascript
+parseQueryParams("http://www.exercises.com?keyword=objects&language=javascript&level=intermediate") // returns { keyword: "objects", language: "javascript", level: "intermediate }
 ```
 
 ## Ocurrencias en palabra
