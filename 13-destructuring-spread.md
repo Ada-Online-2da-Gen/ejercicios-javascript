@@ -11,17 +11,22 @@ A tener en cuenta:
 
 ```js
 const pikachu = {
-    "name": "Pikachu",
-    "id": 25,
-    "type": "electric",
-    "ability": {
+    name: "Pikachu",
+    type: "electric",
+    ability: {
         "primary": "Static",
         "hidden": "Lightning rod"
+    },
+    stats: {
+        hp: 35,
+        attack: 55,
+        deffense: 40,
+        speed: 90
     },
     "moves": [
         "Quick Attack", "Volt Tackle", "Iron Tail", "Thunderbolt"
     ],
-    "typeDefense": {
+    "modifiers": {
         "weakness": ["ground"],
         "resistances": ["electric", "flying", "water", "steel"]
     }
@@ -47,3 +52,55 @@ const pikachu = {
 * Crear una función `addMove` que tome como argumentos un pokémon y un movimiento, agregue dicho movimiento a su lista y devuelva el pokémon con el movimiento agregado
 
 * Crear una función `removeMove` que tome como argumentos un pokémon y un movimiento, elimine dicho movimiento de su lista y devuelva el pokémon con el movimiento agregado
+
+* Crear una función `getAttackModifier`, tome como argumento un objeto con dos propiedades, `attacker` y `attacked`, donde cada valor es un pokémon (p.ej. `{ attacker: pikachu, attacked: squirtle }`) y devuelva:
+    - 2, si el pokémon atacado es débil (`weakness`) contra el tipo del pokémon que ataca
+    - 0,5, si el pokémon atacado es resistente (`resistances`) contra el tipo del pokémon que ataca
+    - 1, si no es débil ni resistente
+
+* Crear un función `battle` que tome como argumentos dos pokémons. La función debe simular una batalla y devolver el resultado de la misma. Las reglas de la misma son:
+    - Por ronda, cada pokémon ataca al contrario
+    - Comienza atacando el pokémon con más velocidad (`speed`)
+    - La batalla termina cuando la vida (`hp`, hit points, puntos de golpe) de un pokémon llega a 0 o menos
+    - El daño se calcula de la siguiente forma: 
+        ```
+        damage = (0.5 * attack * (attack / defense) * modifier)
+        ```
+        - `attack` es el ataque del pokémon que ataca
+        - `defense` es la defensa del pokémon siendo atacado
+        - `modifier` se obtiene de la función `getAttackModifier`
+        - el daño se resta a la vida (`hp`) del pokémon atacado
+    - Se tiene que guardar un registro o historial de cada turno, con la siguiente plantilla:
+        ```js
+        `${attacker} used ${move}! ${attacked} lost ${damage} HP!`
+        ```
+        Por ejemplo:
+        ```
+        "Squirtle used Water Gun! Pikachu lost 12 HP!"
+        ```
+        Si el pokémon es débil contra el tipo de su atacante, se debe agregar `It's super effective!`, si es resistente, se debe agreagar `It's not very effective!`, por ejemplo:
+        ```
+        "Pikachu used Thunderbold! Squirtle lost 24 HP! It's super effective!"
+        ```
+    - El movimiento se elige de forma aleatoria en cada ataque
+    - El objeto que debe devolver como resultado debe seguir la siguiente estructura:
+        
+```js
+{
+    rounds: 1,
+    results: {
+        winner: {
+            name: "Pikachu",
+            hp: 12 // vida restante
+        },
+        losser: {
+            name: "Squirtle",
+            hp: 0
+        }
+    },
+    history: [
+        "Squirtle used Water Gun! Pikachu lost 12 HP!", 
+        "Pikachu used Thunderbold! Squirtle lost 24 HP! It's super effective!"
+    ]
+}
+```
