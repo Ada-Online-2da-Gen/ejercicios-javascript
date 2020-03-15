@@ -64,7 +64,7 @@ const charmander = {
         "Growl", "Scratch", "Flamethrower", "Dragon Breath"
     ],
     modifiers: {
-        "weakness": ["water, ground", "rock"],
+        "weakness": ["water", "ground", "rock"],
         "resistances": ["fire", "ice", "grass", "steal"]
     }
 }
@@ -87,7 +87,7 @@ const squirtle = {
         "Tackle", "Tail Whip", "Water Gun", "Hydro Pump"
     ],
     modifiers: {
-        "weakness": ["electric, grass"],
+        "weakness": ["electric", "grass"],
         "resistances": ["water", "fire", "ice", "steel"]
     }
 }
