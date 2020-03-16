@@ -91,36 +91,36 @@ Hacer las siguientes funciones:
 17. `obtenerTitulosCompletos`, que devuelva un array donde cada elemento es un string con la forma "nombre, puesto seniority, area", p.ej.: "Nadia Conrad, Senior Backend Developer, Desarrollo", habiendo un elemento por cada empleade (usar map)
 
 18. `obtenerInfoPersonal`, que devuelva un array donde cada elemento es un objeto con las propiedades
-    _ nombre
-    _ pais
-    _ edad
+    - nombre
+    - pais
+    - edad
     habiendo un elemento por cada empleade, y donde cada propiedad se corresponde a la propiedad del objeto original (usar map)
 
 19. `obtenerInfoPuestos`, que devuelva un array donde cada elemento es un objeto con las propiedades
-    _ nombre
-    _ area
-    _ puesto
-    _ seniority
+    - nombre
+    - area
+    - puesto
+    - seniority
     habiendo un elemento por cada empleade, y donde cada propiedad se corresponde a la propiedad del objeto original (usar map)
 
 20. `obtenerInfoSeniority`, que devuelva un array donde cada elemento es un objeto con las propiedades
-    _ nombre
-    _ seniority
-    _ sueldo
-    _ cantidadLenguajes
+    - nombre
+    - seniority
+    - sueldo
+    - cantidadLenguajes
     habiendo un elemento por cada empleade, y donde cada propiedad se corresponde a la propiedad del objeto original, eecepto cantidadLenguajes, que es un número indicando la cantidad de lenguajes que sabe (usar map)
 
 21. `obtenerInfoPagos`, que devuelva una array donde cada elemento es un objeto con las propiedades
-    _ nombre
-    _ sueldoBruto
-    _ obraSocial
-    _ jubilacion
-    _ sueldoNeto
+    - nombre
+    - sueldoBruto
+    - obraSocial
+    - jubilacion
+    - sueldoNeto
     habiendo un elemento por cada empleade, donde
-    _ sueldoBruto es el sueldo del objeto original
-    _ obraSocial es el 3% del sueldoBruto
-    _ jubilacion es el 11% del sueldoBruto
-    _ sueldoNeto es el resultado de restarle a sueldoBruto los valores de obraSocial y jubilacion
+    - sueldoBruto es el sueldo del objeto original
+    - obraSocial es el 3% del sueldoBruto
+    - jubilacion es el 11% del sueldoBruto
+    - sueldoNeto es el resultado de restarle a sueldoBruto los valores de obraSocial y jubilacion
 
 22. `obtenerEstadisticasSeniority` que devuelva un objeto donde cada propiedad es un seniority y el valor la cantidad de empleades con dicho seniority
 
