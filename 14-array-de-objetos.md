@@ -1,4 +1,4 @@
-## Productos
+# Array de objetos
 
 ## Estudiantes
 
