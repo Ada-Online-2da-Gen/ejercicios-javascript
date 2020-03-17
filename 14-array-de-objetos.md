@@ -1,5 +1,7 @@
 # Array de objetos
 
+Ignorar la parte de ordenar el resultado momentáneamente (o investigar método `sort`)
+
 ## Estudiantes
 
 Hacer las siguientes funciones:
