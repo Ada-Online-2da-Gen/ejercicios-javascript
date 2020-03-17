@@ -38,19 +38,17 @@ Hacer las siguientes funciones:
 
 3. `cantidadDeArtistasPorInstrumento`, que tome un parámetro "instrumento" y devuelva un objeto donde cada "instrumetno" es una propiedad y su valor la cantidad de artistas que tocan dicho instrumento
 
-4. `cantidadDeArtistasPorGenero`, que tome un parámetro array de artistas y devuelva un objeto donde cada "género" es una propiedad y su valor la cantidad de artistas de dicho género
+4. `cantidadDeArtistasPorGenero`, que tome por parámetro un array de artistas y devuelva un objeto donde cada "género" es una propiedad y su valor la cantidad de artistas de dicho género
 
 5. `artistasConMasDiscosQue`, que tome por parámetro "cantidadDeDiscos" y un array de artistas y devuelva un array con les artistas que tiene más de esa cantidad de discos, ordenados de mayor a menor según cantidad de discos
 
-6. `artistaTocoEnAnio`, que tome por parámetro un parámetro "artista" y "anio" y un array de artistas, y devuelva true si dicho artista tocó su último recital en dicho año
+6. `artistaConMasEntradasVendidas`, que tome por parámetro un array de artistas y devuelva el objeto artista que vendió más entradas en su último recital
 
-7. `artistaConMasEntradasVendidas`, que devuelva el objeto artista que vendió más entradas en su último recital
+7. `artistaConMayorRecaudacion`, que tome por parámetro un array de artistas y devuelva el objeto artista que más recaudó en su último recital (entradasVendidas * costoEntradas)
 
-8. `artistaConMayorRecaudacion`, que devuelva el objeto artista que más recaudó en su último recital (entradasVendidas * costoEntradas)
+8. `artistasConDiscoEnAnio`, que tome por parámetro un parámetro "anio", y devuelva true un array con los artistas que tengan publicado al menos un disco en dicho año
 
-9. `artistasConDiscoEnAnio`, que tome por parámetro un parámetro "anio", y devuelva true un array con los artistas que tengan publicado al menos un disco en dicho año
-
-10. `artistaConMasCopias`, que devuelva el objeto artista que más copias de discos en total vendió
+9. `artistaConMasCopias`, que devuelva el objeto artista que más copias de discos en total vendió
 
 ## Empleades
 
