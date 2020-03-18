@@ -36,7 +36,7 @@ Hacer las siguientes funciones:
 
 1. `artistasSolistas`, que tome por parámetro un array de artistas y devuelva un array con les artistas que sean solistas
 
-2. `artistasPorEdad`, que tome un parámetro "edad" y un array de artistas y devuelva un array con les artistas que tengan dicha edad, ordenados de menor a mayor según la edad
+2. `artistasPorEdad`, que tome un parámetro "edad" y un array de artistas y devuelva un array con les artistas que tengan dicha edad
 
 3. `cantidadDeArtistasPorInstrumento`, que tome un parámetro "instrumento" y devuelva un objeto donde cada "instrumetno" es una propiedad y su valor la cantidad de artistas que tocan dicho instrumento
 
