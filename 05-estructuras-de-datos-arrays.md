@@ -67,7 +67,7 @@ Una vez hecho este ejercicio, investigar el método `indexOf`.
 **Frutas**
 - Crear un programa que pida ingresar 🍎, 🍐y 🍑 y devuelva un mensaje con la cantidad que hay de cada una. Ejemplo:
 
-```javascript
+```UTF-8 (Unicode)
 // Ingrese frutas: 🍎🍎🍐🍑🍎🍑
 
 // Hay 3 🍎, 1 🍐 y 2 🍑
