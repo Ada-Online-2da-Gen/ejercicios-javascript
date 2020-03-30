@@ -132,7 +132,7 @@ Crear las siguientes clases con sus respectivos métodos y propiedades
     - **`obtenerGanaciasPorCategoria(categoria)`** devuelve un array con todas las ganancias de cierta `categoria`
     - **`calcularTotalPorMes(mes)`** devuelve el total resultante de restar todos los gastos hechos y sumar todas las ganancias obtenidas en un cierto `mes`
     - **`calcularTotalPorCategoria(categoria)`** devuelve el total resultante de restar todos los gastos hechos y sumar todas las ganancias obtenidas en cierta `categoria
-    - **o`btenerMonto**` devuelve `monto`
+    - **`obtenerMonto()**` devuelve `monto`
   - **Observaciones**  
     - los objetos `gasto` y `ganancia` contiene las propiedades: 
       - `descripcion` (string)
