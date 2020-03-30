@@ -1,4 +1,4 @@
-## Programación orientada a objetos
+# Programación orientada a objetos
 
 Crear las siguientes clases con sus respectivos métodos y propiedades
 
@@ -140,8 +140,9 @@ Crear las siguientes clases con sus respectivos métodos y propiedades
       - `categoria` (string)
     - cuando se agrega `gasto` o `ganancia` al array operaciones, hay que agregarle a dicha objeto la propiedad `tipo` con el valor `"GASTO"` o `"GANANCIA"` según corresponda, para poder identificarlos en las siguientes operaciones
     - cuando se devuelve un array con gastos o ganancias, hay que borrar de los objetos que se devuelven la propiedad `tipo`   
+<br>
 
-## CarritoCompras con Producto
+## Carrito con Producto
 
 ## Agenda con Tareas
 
