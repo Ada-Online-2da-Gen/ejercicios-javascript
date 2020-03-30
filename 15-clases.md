@@ -1,6 +1,8 @@
 # Programación orientada a objetos
 
-Crear las siguientes clases con sus respectivos métodos y propiedades
+Crear las siguientes clases con sus respectivos métodos y propiedades.
+Usar propiedades privadas.
+Cuando se devuelvan valores, si son objetos y arrays de las propiedades, devolver copias de los mismo, para evitar que puedan ser modificados.
 
 ## Calculadora
   - **Propiedades**
