@@ -124,15 +124,15 @@ Crear las siguientes clases con sus respectivos métodos y propiedades
   - **Constructor**
     - toma como argumento `montoInicial` y lo asigna a `monto`
   - **Métodos**
-    -`**agregarGasto(gasto)`** agrega `gasto` a operaciones
-    -`**agregarGanancia(ganancia)`** agrega `ganancia` a operaciones
-    -`**obtenerGastosPorMes(mes)`** devuelve un array con todos los gastos hechos en `mes`
-    -`**obtenerGanaciasPorMes(mes)`** devuelve un array con todas los ganancias obtenidas en `mes`
-    -`**obtenerGastosPorCategoria(categoria)`** devuelve un array con todos los gastos de cierta `categoria`
-    -`**obtenerGanaciasPorCategoria(categoria)`** devuelve un array con todas las ganancias de cierta `categoria`
-    -`**calcularTotalPorMes(mes)`** devuelve el total resultante de restar todos los gastos hechos y sumar todas las ganancias obtenidas en un cierto `mes`
-    -`**calcularTotalPorCategoria(categoria)`** devuelve el total resultante de restar todos los gastos hechos y sumar todas las ganancias obtenidas en cierta `categoria
-    -`**obtenerMonto**` devuelve `monto`
+    -**`agregarGasto(gasto)`** agrega `gasto` a operaciones
+    -**`agregarGanancia(ganancia)`** agrega `ganancia` a operaciones
+    -**`obtenerGastosPorMes(mes)`** devuelve un array con todos los gastos hechos en `mes`
+    -**`obtenerGanaciasPorMes(mes)`** devuelve un array con todas los ganancias obtenidas en `mes`
+    -**`obtenerGastosPorCategoria(categoria)`** devuelve un array con todos los gastos de cierta `categoria`
+    -**`obtenerGanaciasPorCategoria(categoria)`** devuelve un array con todas las ganancias de cierta `categoria`
+    -**`calcularTotalPorMes(mes)`** devuelve el total resultante de restar todos los gastos hechos y sumar todas las ganancias obtenidas en un cierto `mes`
+    -**`calcularTotalPorCategoria(categoria)`** devuelve el total resultante de restar todos los gastos hechos y sumar todas las ganancias obtenidas en cierta `categoria
+    -**o`btenerMonto**` devuelve `monto`
   - **Observaciones**  
     - los objetos `gasto` y `ganancia` contiene las propiedades: 
       - `descripcion` (string)
