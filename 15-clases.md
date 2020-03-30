@@ -46,7 +46,7 @@ Crear las siguientes clases con sus respectivos métodos y propiedades
     - `volumen` (número), inicializa en 0
     - `marca` (string)
   - **Constructor**
-    - pide como argumentos `marca`, `canales` y los asigna a sus respectivas propiedades
+    - pide como argumentos `marca` y `canales` y los asigna a sus respectivas propiedades
   - **Métodos**
     - **`prender()`** pone `encendido` en `true`
     - **`apagar()`** pone `encendido` en `false`
@@ -74,10 +74,9 @@ Crear las siguientes clases con sus respectivos métodos y propiedades
 ## Anotador
   - **Propiedades**
     - `titulo` (string)
-    - `notas` (array de strings)
+    - `notas` (array de strings), inicializa vacío
   - **Constructor**
     - pide como argumento `titulo` y lo asigna a sus respectiva propiedad
-    - inicializa `notas` con un array vacío
   - **Método**
     - **`agregarNota(nota)`** agrega `nota` al array de `notas`
     - **`actualizarNota(id, nota)`** actualiza el ítem con índice `id`, reemplazándolo por `nota`
