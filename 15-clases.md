@@ -256,8 +256,6 @@ Cuando se devuelvan valores, si son objetos y arrays de las propiedades, devolve
     - **`filtrarPorGenero(genero)`** devuelve un array de libros con `genero`
     - **`comprarLibros(idLibros)`** toma un array de ids de libros, si tienen stock, reduce el stock de dichos libros en 1 y suma a ganancias el precio de cada libro comprado
     - **`obtenerGanancias`** devuelve `ganancias`
-  - **Observaciones** 
-    - cuando devuelve un ítem o un array de ítems, dicho ítem tiene que ser un objeto nuevo (no una instancia de la clase) con solo las propiedades, no los métodos, porque de lo contrario podría ser modificado por fuera de la clase que debe manipularlo
     <br> 
 
 ## Chat con Usuarios y Mensajes
