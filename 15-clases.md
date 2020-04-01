@@ -211,8 +211,6 @@ Cuando se devuelvan valores, si son objetos y arrays de las propiedades, devolve
       - **`filtrarFinalizadas()`** devuelve un array de tareas que estén finalizadas
       - **`filtrarPorCategoria(categoria)`** devuelve un array de tareas que tenga `categoria`
       - **`filtrarPorVencimiento(fecha)`** devuelve un array de tareas que tenga vencimiento en `fecha`
-  - **Observaciones**
-      - cuando devuelve un ítem o un array de ítems, dicho ítem tiene que ser un objeto nuevo (no una instancia de la clase) con solo las propiedades, no los métodos, porque de lo contrario podría ser modificado por fuera de la clase que debe manipularlo
      <br> 
 
 
