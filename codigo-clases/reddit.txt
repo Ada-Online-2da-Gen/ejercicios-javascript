@@ -1,0 +1,44 @@
+Usuario
+- id
+- nombre
+- password
+- fechaDeRegistro
+- suscripciones
+- karma
+- avatar
+- mail
+
+Post
+- id
+- fecha
+- titulo
+- contenido
+- usuario
+- comentarios
+- votos (Voto[])
+- votarPositivo()
+
+Comentario
+- id
+- usuario
+- votos
+- fecha
+- contenido
+- comentarios
+
+Subreddit
+- id
+- nombre
+- descripcion
+- suscriptos
+- posts
+
+Voto
+- id
+- esPositivo
+- idUsuario
+- idVotado
+
+Reddit
+- id
+- subreddits
