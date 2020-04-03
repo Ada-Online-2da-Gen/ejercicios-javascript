@@ -1,33 +1,9 @@
 # Creando un RPG (Role Playing Game) con Programación Orientada a Objetos
 <br>
 
-## Conceptos, buenas prácticas y consideraciones
+## Conceptos
 
-### Principio de única responsabilidad
-
-Una clase tiene que tener una única responsabilidad, es decir, encargarse de una única cosa. Cuando vemos que comienza a manejar más de la cuenta, o cosas que no le corresponde, hay que separarla en nuevas clases. Lo mismo aplica a métodos.
-
-### Propiedades de clase
-
-Cuando tenemos propiedades cuyo no depende de valores que se le pasan al constructor, podemos declararlo fuera de este, para una mayor legibilidad. Esto:
-```js
-class Ejemplo {
-  constructor() {
-    this.propiedadA = "a"
-    this.propiedadB = "b"
-    this.propiedadC = "c"
-  }
-}
-```
-es lo mismo que esto:
-```js
-class Ejemplo {
-  propiedadA = "a"
-  propiedadB = "b"
-  propiedadC = "c"
-}
-```
-
+### Encapsulamiento
 ### Herencia
 
 Una clase puede "heredar" o "descender" de otra clase (o "extenderla"). Esto significa que si una clase B extiende de una clase A, B "hereda" todos los métodos y propiedades de A. Para eso se declara `class B extends A`. Por ejemplo:
@@ -63,25 +39,6 @@ class Conejo extends Animal {
 
 ⚠️ Las propiedades y métodos privados no se heredan (sólo pueden ser accedidos en la clase donde se declaran)
 
-### Errores personalizados 
-
-Se puede extender la clase `Error` para tener errores custom y no tener que repetir siempre el mismo mensaje cada vez que generarmos un error del mismo tipo. Esto se hace de la siguiente forma:
-```js
-class CustomError extends Error {
-  constructor(mensaje) {
-    super()
-    this.name = "CustomError"
-    this.message = "Mensaje custom"
-  }
-}
-```
-y se usa arrojándolo:
-```js
-throw new CustomError()
-```
-Además, podemos pasarles otros parámetros para que el error sea más informativo. Algunos errores comunes que podemos tener son `ArgumentoInvalidoError`, `MetodoNoImplementadoError`, `ClaseNoInstanciableError`, etc.
-- Podemos acceder al nombre de una clase con la propiedad `name`, por ejemplo, `Animal.name`
-
 ### Abstracción 
 
 - **Clase abstracta** es una clase que *no se puede instanciar* (no se puede llamar con `new`). Para lograrlo, en su constructor tenemos que chequear que quien lo esté llamando no sea la propia clase, de la siguiente forma
@@ -110,6 +67,55 @@ animal.comer() // Error
 const conejo = new Conejo()
 conejo.comer() // "Nom nom nom"
 ```
+### Polimorfismo
+<br>
+
+## Buenas prácticas y consideraciones
+
+### Principio de única responsabilidad
+
+Una clase tiene que tener una única responsabilidad, es decir, encargarse de una única cosa. Cuando vemos que comienza a manejar más de la cuenta, o cosas que no le corresponde, hay que separarla en nuevas clases. Lo mismo aplica a métodos.
+
+### Propiedades de clase
+
+Cuando tenemos propiedades cuyo no depende de valores que se le pasan al constructor, podemos declararlo fuera de este, para una mayor legibilidad. Esto:
+```js
+class Ejemplo {
+  constructor() {
+    this.propiedadA = "a"
+    this.propiedadB = "b"
+    this.propiedadC = "c"
+  }
+}
+```
+es lo mismo que esto:
+```js
+class Ejemplo {
+  propiedadA = "a"
+  propiedadB = "b"
+  propiedadC = "c"
+}
+```
+
+
+### Errores personalizados 
+
+Se puede extender la clase `Error` para tener errores custom y no tener que repetir siempre el mismo mensaje cada vez que generarmos un error del mismo tipo. Esto se hace de la siguiente forma:
+```js
+class CustomError extends Error {
+  constructor(mensaje) {
+    super()
+    this.name = "CustomError"
+    this.message = "Mensaje custom"
+  }
+}
+```
+y se usa arrojándolo:
+```js
+throw new CustomError()
+```
+Además, podemos pasarles otros parámetros para que el error sea más informativo. Algunos errores comunes que podemos tener son `ArgumentoInvalidoError`, `MetodoNoImplementadoError`, `ClaseNoInstanciableError`, etc.
+- Podemos acceder al nombre de una clase con la propiedad `name`, por ejemplo, `Animal.name`
 
 ### Propiedades y métodos estáticos
 
