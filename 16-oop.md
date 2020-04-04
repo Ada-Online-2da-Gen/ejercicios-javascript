@@ -161,7 +161,8 @@ Los métodos y propiedes estáticas son muy útiles en clases de tipo "helpers" 
 3. Crear tres clases concretas `Orco`, `Goblin` y `Kobold` que desciendan de `Monstruo`, que en su constructor deben llamar a su clase ascendiente con valores específicos que necesita su constructor
 4. Crear la clase `Juego` para manejar el flujo del juego:
     - debe tener una propiedad `historial` que es un array que inicializa vacío
-    - toda acción que se realice debe agregar la información pertinente a `historial` e imprimir en consola, hacer un método para esto
+    - debe tener un método `loguear` que agregue un mensaje al historial y lo muestre en consola
+    - debe loguear cada acción y mensaje relativo al juego (p.ej.: "Atacas a monstruo! Le sacás 8 de vida", "No puedes investigar")
     - debe tener una propiedad `monstruo` que representa el monstruo actual
     - debe tener un método `investigar` que genere un nuevo mostruo aleatorio y lo asigne a `monstruo`
     - debe tener un método `atacar` que permita atacar a `monstruo`
@@ -170,11 +171,11 @@ Los métodos y propiedes estáticas son muy útiles en clases de tipo "helpers" 
 
 ### Siguientes pasos:
 
-5. Crear una clase utilitaria `Random` con métodos **estáticos** para ayudar en toda la lógica de números aleatorios
-6. Extraer la lógica de combate en una clase `Combate` y refactorizar el código
+6. Extraer la lógica de combate en una clase `Combate` y refactorizar el código. `Juego` debería tener `Combate` y delegarle responsabilidades.
+X. Centralizar las distintas posibles acciones (atacar, investigar) dentro de un m 
 7. Agregarle a `Heroe` la propiedad `inventario`, que es un array que inicializa vacio
-8. Crear una clase `Item` con `nombre` y el método `consumir`, dicho método debe tener como parámetro `objetivo` y debe sumarle 10 a la vida de dicho objetivo
-9. Agregar a `Heroe` el método `consumirItem`, que tome como argumento un ítem y llame a su método `consumir` pasándose a sí mismo como argumento, luego debe eliminar dicho ítem de `inventario`
+8. Crear una clase `Item` con `nombre` y el método `utilizar`, dicho método debe tener como parámetro `objetivo` y debe sumarle 10 a la vida de dicho objetivo
+9. Agregar a `Heroe` el método `utilizarItem`, que tome como argumento un ítem y llame a su método `consumir` pasándose a sí mismo como argumento, luego debe eliminar dicho ítem de `inventario`
 10. Agregar a `Juego` el método `consumirItem`, que llame al método `utilizar` de `Heroe`
 11. Hacer que `investigar` tenga un probabilidad de encontrar un monstruo o una poción y agregarla a `inventario` de `Heroe`
 13. Extraer la lógica de inventario en una clase `Inventario`, que permita agregar, utilizar y remover ítems, e imprimir una lista de ítems
