@@ -328,7 +328,6 @@ Cuando se devuelvan valores, si son objetos y arrays de las propiedades, devolve
     
   ### Twitter
   - **Propiedades**
-    - usuarios (array de `Usuario`), inicializa vacío
     - tweets (array de `Tweet`), inicializa vacío
   - **Métodos**
     - **`twittear(tweet)`** agrega `tweet` a `tweets`, *si dicho `tweet` no se encuentra actualmente en el array*
