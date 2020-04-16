@@ -1,0 +1,140 @@
+html,
+body {
+  margin: 0;
+  background-color: #222;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  width: 100%;
+}
+
+.rpgui-content {
+  max-width: 1400px;
+  position: relative;
+}
+
+.rpgui-container {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-container,
+.stats-container,
+.battle-container {
+  flex-grow: 1;
+}
+
+.character-container {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: calc(100% - 60px);
+  max-width: 600px;
+}
+
+#portrait-container {
+  width: 173px;
+  height: 173px;
+  background-image: url('assets/characters/Actor1RMVX.png');
+  background-position: -9px -145px;
+  background-color: #854c31;
+  background-size: 400%;
+  margin-right: 30px;
+}
+
+.character-info {
+  margin-left: 15px;
+}
+
+#character-name {
+  text-align: left;
+}
+
+#hp-stat,
+#xp-stat {
+  line-height: 42px;
+  position: relative;
+  left: 10px;
+}
+
+#area-name {
+  position: absolute;
+  top: 30px;
+}
+
+#area-message {
+  flex-grow: 1;
+  width: 350px;
+  overflow: auto;
+}
+
+#area-bg {
+  background-image: url('assets/battlebacks/bb1.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#monster-img {
+  max-width: 500px;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.attacked {
+  animation: attacked 0.2s;
+}
+
+#hp-bar {
+  transition: 0.2s;
+}
+
+@keyframes attacked {
+  0%,
+  100% {
+    filter: invert(0);
+  }
+  50% {
+    filter: invert(1);
+  }
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: none;
+}
+
+#inventory {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
