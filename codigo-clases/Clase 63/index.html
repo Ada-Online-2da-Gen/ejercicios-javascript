@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/rpgui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="entidades/Inventario.js"></script>
+    <script src="entidades/Pocion.js"></script>
+    <script src="entidades/Combate.js"></script>
+    <script src="entidades/Personaje.js"></script>
+    <script src="entidades/Monstruo.js"></script>
+    <script src="entidades/Heroe.js"></script>
+    <script src="entidades/Area.js"></script>
+    <script src="entidades/Logger.js"></script>
+    <script src="entidades/CentralMensajes.js"></script>
+    <script src="entidades/Vista.js"></script>
+    <script src="entidades/Juego.js"></script>
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="rpgui-content flex">
+      <div class="column display-container">
+        <div class="rpgui-container framed battle-container column">
+          <div class="rpgui-container framed-golden" id="area-bg">
+            <h1 id="area-name">Bosque encantado</h1>
+            <div class="flex character-container">
+              <div class="rpgui-container">
+                <div
+                  class="rpgui-container framed-golden"
+                  id="portrait-container"
+                ></div>
+              </div>
+              <div class="rpgui-container stats-container">
+                <h2 id="character-name">Xena</h2>
+                <div
+                  data-value="0.4"
+                  class="rpgui-progress red"
+                  data-rpguitype="progress"
+                >
+                  <div class="rpgui-progress-track">
+                    <div id="hp-bar" class="rpgui-progress-fill red"></div>
+                    <span id="hp-stat">HP 10/100</span>
+                  </div>
+                  <div class="rpgui-progress-left-edge"></div>
+                  <div class="rpgui-progress-right-edge"></div>
+                </div>
+                <div
+                  id="xp-bar"
+                  data-value="0.4"
+                  class="rpgui-progress purple"
+                  data-rpguitype="progress"
+                >
+                  <div class="rpgui-progress-track">
+                    <div
+                      class="rpgui-progress-fill purple"
+                      style="left: 0px; width: 60%;"
+                    ></div>
+                    <span id="xp-stat">XP 10/1000</span>
+                  </div>
+                  <div class="rpgui-progress-left-edge"></div>
+                  <div class="rpgui-progress-right-edge"></div>
+                </div>
+              </div>
+            </div>
+            <img
+              src="assets/monsters/Colossal Snake.png"
+              alt=""
+              id="monster-img"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="rpgui-container framed-golden" id="area-message"></div>
+        <div class="rpgui-container framed actions-container">
+          <div class="rpgui-container column">
+            <button class="rpgui-button" type="button" id="attack-btn">
+              <p>Atacar</p>
+            </button>
+            <button class="rpgui-button" type="button" id="explore-btn">
+              <p>Explorar</p>
+            </button>
+            <button class="rpgui-button" type="button" id="inventory-btn">
+              <p>Inventario</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--
+
+        INVENTARIO
+
+      -->
+      <div id="overlay">
+        <div class="rpgui-container framed" id="inventory">
+          <h2>Inventario</h2>
+          <hr />
+          <br />
+
+          <div class="rpgui-icon empty-slot"></div>
+          <div class="rpgui-icon empty-slot"></div>
+          <div class="rpgui-icon empty-slot"></div>
+          <br /><br />
+
+          <div class="rpgui-icon empty-slot"></div>
+          <div class="rpgui-icon empty-slot"></div>
+          <div class="rpgui-icon empty-slot"></div>
+          <br /><br />
+
+          <div class="rpgui-icon empty-slot"></div>
+          <div class="rpgui-icon empty-slot"></div>
+          <div class="rpgui-icon empty-slot"></div>
+          <br /><br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
