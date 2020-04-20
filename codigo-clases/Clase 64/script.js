@@ -12,21 +12,25 @@
 // * PUT - Actualizar - Update
 // * DELETE - Borrar - Delete
 
-// const actualizarGatito = (data) => {
-//   const img = document.getElementById('cat-img')
-//   img.src = data.url
-//   img.width = data.width
-//   img.height = data.height
-// }
+const actualizarGatito = (data) => {
+  const img = document.getElementById('cat-img')
+  img.src = data.url
+  img.width = data.width
+  img.height = data.height
+}
 
-window.onload = () => {
+const obtenerGatitoRandom = () => {
   axios
     .get('https://api.thecatapi.com/v1/images/search')
-    // .then((response) => actualizarGatito(response.data[0]))
-    .then(() => console.log('en el medio'))
+    .then((response) => actualizarGatito(response.data[0]))
+}
 
-  console.log('antes')
-  console.log('despues')
+window.onload = () => {
+  // Promesa o promise
+  const botonGatoAleatorio = document.getElementById('random-cat-btn')
+  botonGatoAleatorio.addEventListener('click', obtenerGatitoRandom)
+
+  obtenerGatitoRandom()
 }
 
 // // asincrona
