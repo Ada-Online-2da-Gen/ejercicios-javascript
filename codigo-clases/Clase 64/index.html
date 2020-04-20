@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <h1 class="title">Buscador de gatites</h1>
+      <div class="container tab-container">
+        <div class="tabs is-centered">
+          <ul>
+            <li class="is-active"><a>Random</a></li>
+            <li><a>Razas</a></li>
+            <li><a>Búsqueda</a></li>
+            <li><a>Favoritos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-10">
+            <div class="box">
+              <figure class="image is-5by3">
+                <img
+                  src="https://bulma.io/images/placeholders/256x256.png"
+                  id="cat-img"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-4">
+            <a
+              class="button is-primary is-medium is-fullwidth"
+              id="new-cat-btn"
+            >
+              Otro gato!
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
