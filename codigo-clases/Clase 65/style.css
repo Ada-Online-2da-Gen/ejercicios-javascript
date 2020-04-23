@@ -1,0 +1,80 @@
+.title {
+  text-align: center;
+}
+
+.is-flex-centered {
+  justify-content: center;
+}
+
+.tab-container {
+  margin-bottom: 30px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 30px;
+}
+
+.breed-search-label {
+  line-height: 40px;
+  margin-right: 20px;
+}
+
+.p-1 {
+  padding: 1.25em;
+}
+
+.title {
+  text-align: center;
+}
+
+.tab-container {
+  margin-bottom: 30px;
+}
+
+.dropdown-content {
+  overflow: auto;
+  max-height: 300px;
+}
+
+.image,
+.image img {
+  height: 100%;
+}
+
+#images-search .columns {
+  flex-wrap: wrap;
+}
+
+#page {
+  line-height: 40px;
+  margin: 0 15px;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: -49px;
+  width: 100%;
+  transition: 0.2s;
+  background-color: white;
+}
+
+.card:hover .card-footer {
+  bottom: 0;
+}
+
+.img-is-loading {
+  filter: opacity(0.3);
+}
