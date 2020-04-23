@@ -9,15 +9,23 @@ const API_KEY = '6a093eb3-b481-44c9-b306-bf1486088068'
  * ==============================================
  */
 
+/**
+ * Buscar una imagen aleatoria
+ * y actualiza la imagen de la sección "Random"
+ */
 const obtenerGatiteAleatorio = () => {
   $('#cat-img').classList.add('img-is-loading')
   $('#random-cat-btn').classList.add('is-loading')
 
   axios.get('https://api.thecatapi.com/v1/images/search').then((response) => {
-    actualizarGatite(response.data[0])
+    actualizarImagenRandomGatite(response.data[0])
   })
 }
 
+/**
+ * Buscar una lista de razas a partir de un string
+ * y actualiza la tabla de la sección "Buscador de razas"
+ */
 const buscarRazas = (busqueda) => {
   $('#breed-search-input').parentElement.classList.add('is-loading')
   $('#breed-search-btn').classList.add('is-loading')
@@ -32,34 +40,54 @@ const buscarRazas = (busqueda) => {
     })
 }
 
+/**
+ * Obtiene la lista de razas
+ * y actualiza el select sección "Raza"
+ */
 const obtenerRazas = () => {
   axios
     .get('https://api.thecatapi.com/v1/breeds')
-    .then((response) => actualizarRazas(response.data))
+    .then((response) => actualizarDropdownRazas(response.data))
 }
 
+/**
+ * Obtiene la info de una raza específica a partir de su id
+ * y actualiza la info de la card de la sección "Razas"
+ */
 const obtenerRaza = (raza) => {
   axios
     .get(`https://api.thecatapi.com/v1/breeds/${raza}`)
-    .then((response) => actualizarRaza(response.data))
+    .then((response) => actualizarInfoCardRaza(response.data))
 }
 
+/**
+ * Obtiene la imagen de una raza específica a partir de su id
+ * y actualiza la imagen de la card de la sección "Razas"
+ */
 const obtenerImagenRaza = (raza) => {
   axios
     .get(`https://api.thecatapi.com/v1/images/search?breed_id=${raza}`)
-    .then((response) => actualizarImagenRaza(response.data[0].url))
+    .then((response) => actualizarImagenCardRaza(response.data[0].url))
 }
 
+/**
+ * Busca imágenes según el número de página
+ * y actualiza las imágenes de la sección "Imágenes"
+ */
 const obtenerImagenes = (pagina = 0) => {
   axios
     .get(
-      `https://api.thecatapi.com/v1/images/search?limit=9&page=${pagina}&order=desc&api_key=6a093eb3-b481-44c9-b306-bf1486088068`
+      `https://api.thecatapi.com/v1/images/search?limit=9&page=${pagina}&order=desc&api_key=${API_KEY}`
     )
     .then((response) => {
       actualizarImagenes(response.data)
     })
 }
 
+/**
+ * Devuelve el string del html de la card
+ * de la sección "Imágenes"
+ */
 const obtenerImgTemplate = (src) => `
   <div class="column is-4">
     <div class="card">
@@ -104,14 +132,14 @@ const actualizarTab = (evento) => {
   evento.target.parentElement.classList.add('is-active')
 }
 
-const actualizarGatite = (data) => {
+const actualizarImagenRandomGatite = (data) => {
   const img = document.getElementById('cat-img')
   img.src = data.url
   img.width = data.width
   img.height = data.height
 }
 
-const actualizarRazas = (razas) => {
+const actualizarDropdownRazas = (razas) => {
   const dropdown = $('#breed-dropdown')
   dropdown.innerHTML = ''
 
@@ -124,7 +152,7 @@ const actualizarRazas = (razas) => {
   obtenerImagenRaza(dropdown.value)
 }
 
-const actualizarRaza = (data) => {
+const actualizarInfoCardRaza = (data) => {
   $('#breed-name').innerHTML = data.name
   $('#breed-description').innerHTML = data.description
 
@@ -136,7 +164,7 @@ const actualizarRaza = (data) => {
   $('#breed-temperament').innerHTML = temperamento
 }
 
-const actualizarImagenRaza = (url) => {
+const actualizarImagenCardRaza = (url) => {
   $('#breed-img').src = url
 }
 
