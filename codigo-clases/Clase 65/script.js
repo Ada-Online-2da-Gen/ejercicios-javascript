@@ -220,26 +220,3 @@ const inicializar = () => {
 }
 
 window.onload = inicializar
-
-// * https://api.thecatapi.com/v1/breeds/bali
-
-// * query params
-
-// * https://api.mercadolibre.com/v1/productos/:id
-// * https://api.mercadolibre.com/v1/productos/{producto_id}
-
-// * https://api.mercadolibre.com/v1/productos/4jjk343l
-
-// * https://api.mercadolibre.com/v1/productos/8987934kjj
-
-// * https://api.mercadolibre.com/v1/productos?min=1000&max=2000
-
-// * https://api.mercadolibre.com/v1/productos?max=2000&min=1000
-
-// * https://api.mercadolibre.com/v1/productos?min=1000
-
-// * https://api.mercadolibre.com/v1/productos?min=1000&max=2000
-
-// * https://api.thecatapi.com/v1/images/search?breed_id=bali
-
-// * ENDPOINT

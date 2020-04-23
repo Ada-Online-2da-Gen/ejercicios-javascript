@@ -49,6 +49,7 @@
   height: 100%;
 }
 
+#breed-filters .columns,
 #images-search .columns {
   flex-wrap: wrap;
 }
@@ -77,4 +78,13 @@
 
 .img-is-loading {
   filter: opacity(0.3);
+}
+
+label.checkbox {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#breed-filters .title {
+  text-align: left;
 }

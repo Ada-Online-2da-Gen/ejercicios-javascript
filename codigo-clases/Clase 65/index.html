@@ -30,6 +30,7 @@
             <li class="is-active"><a href="#random">Random</a></li>
             <li><a href="#breeds">Razas</a></li>
             <li><a href="#breeds-search">Buscador de razas</a></li>
+            <li><a href="#breed-filters">Buscador con filtros</a></li>
             <li><a href="#images-search">Imágenes</a></li>
             <li><a href="#favourites">Favoritos</a></li>
           </ul>
@@ -154,6 +155,80 @@
             </tr>
           </tbody>
         </table>
+      </div>
+            <!--
+        ===================================
+        FILTRADO DE RAZAS
+        ===================================
+      -->
+      <div class="container tab-section is-hidden" id="breed-filters">
+        <div class="columns">
+          <div class="column is-4">
+            <div class="content">
+              <h3>Filtros</h3>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="hairless">
+                Sin pelo
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="rex">
+                Con rulos
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="natural">
+                Natural
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="experimental">
+                De criadero
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="rare">
+                Exótico
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="supress_tail">
+                Sin cola
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="short_legs">
+                Piernas cortas
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="hypoallergenic">
+                Hipoalergénico
+              </label>
+            </div>
+          </div>
+          <div class="column is-8">
+            <div class="content mb-2">
+              <p id="breed-results-count">10 resultados</p>
+            </div>
+            <div class="columns" id="breed-results">
+              <!-- 
+                **** Template a copiar ****
+               -->
+              <div class="column is-6">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="https://bulma.io/images/placeholders/1280x960.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-5">Raza</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 
+                **** Fin template ****
+               -->
+            </div>
+          </div>
+        </div>
       </div>
       <!--
         ===================================
