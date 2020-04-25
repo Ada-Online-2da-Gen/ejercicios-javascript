@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="content">
+        <div class="is-flex">
+          <p class="ml-2 mr-2" id="username">Hola Ada!</p>
+          <a href="#" id='open-change-user-btn'>Cambiar usuario</a>
+        </div>
+      </div>
+    </div>
+    <section class="section">
+      <h1 class="title">Buscador de gatites</h1>
+      <!--
+        ===================================
+        TABS
+        ===================================
+      -->
+      <div class="container tab-container">
+        <div class="tabs is-centered">
+          <ul>
+            <li class="is-active"><a href="#random">Random</a></li>
+            <li><a href="#breeds">Razas</a></li>
+            <li><a href="#breeds-search">Buscador de razas</a></li>
+            <li><a href="#breed-filters">Buscador con filtros</a></li>
+            <li><a href="#images-search">Imágenes</a></li>
+            <li><a href="#votes">Votos</a></li>
+            <li><a href="#favourites">Favoritos</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--
+        ===================================
+        GATITO ALEATORIO
+        ===================================
+      -->
+      <div class="container tab-section" id="random">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="box">
+              <figure class="image">
+                <img
+                  src="https://bulma.io/images/placeholders/256x256.png"
+                  id="cat-img"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-4">
+            <a
+              class="button is-primary is-medium is-fullwidth"
+              id="random-cat-btn"
+            >
+              Otre gatite!
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--
+        ===================================
+        RAZAS
+        ===================================
+      -->
+      <div class="container tab-section is-hidden" id="breeds">
+        <div class="select mb-2">
+          <select id="breed-dropdown">
+            <option>Select dropdown</option>
+            <option>With options</option>
+          </select>
+        </div>
+        <!--
+        ===================================
+          Card raza
+        ===================================
+        -->
+        <div class="card">
+          <div class="columns is-gapless">
+            <div class="column">
+              <figure class="image">
+                <img
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                  alt="Placeholder image"
+                  id="breed-img"
+                />
+              </figure>
+            </div>
+            <div class="column">
+              <div class="content p-1">
+                <h1 id="breed-name">Persa</h1>
+                <p id="breed-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet dignissimos qui aperiam amet, quia ab quos tempore
+                  sint voluptatem sit earum voluptas numquam ducimus eum quasi,
+                  aliquid vero autem. Doloribus.
+                </p>
+                <div class="tags" id="breed-temperament">
+                  <span class="tag">Alegre</span>
+                  <span class="tag">Energético</span>
+                  <span class="tag">Curioso</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+        ===================================
+        BÚSQUEDA RAZAS
+        ===================================
+      -->
+      <div class="container tab-section is-hidden" id="breeds-search">
+        <div class="columns">
+          <div class="column is-10">
+            <div class="field">
+              <div class="control">
+                <input
+                  class="input is-small"
+                  type="text"
+                  placeholder="Búsqueda"
+                  id="breed-search-input"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="column is-2">
+            <button
+              class="button is-primary is-small is-fullwidth"
+              id="breed-search-btn"
+            >
+              Buscar
+            </button>
+          </div>
+        </div>
+        <!--
+        ===================================
+        Resultado búsquedas
+        ===================================
+        -->
+        <table class="table is-striped is-fullwidth">
+          <tbody id="breed-search-results">
+            <tr>
+              <td>Una raza</td>
+            </tr>
+            <tr>
+              <td>Otra raza</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+            <!--
+        ===================================
+        FILTRADO DE RAZAS
+        ===================================
+      -->
+      <div class="container tab-section is-hidden" id="breed-filters">
+        <div class="columns">
+          <div class="column is-4">
+            <div class="content">
+              <h3>Filtros</h3>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="hairless">
+                Sin pelo
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="rex">
+                Con rulos
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="natural">
+                Natural
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="experimental">
+                De criadero
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="rare">
+                Exótico
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="supress_tail">
+                Sin cola
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="short_legs">
+                Piernas cortas
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="breed-filter" data-filter="hypoallergenic">
+                Hipoalergénico
+              </label>
+            </div>
+          </div>
+          <div class="column is-8">
+            <div class="content mb-2">
+              <p id="breed-results-count">10 resultados</p>
+            </div>
+            <div class="columns" id="breed-results">
+              <!-- 
+                **** Template a copiar ****
+               -->
+              <div class="column is-6">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="https://bulma.io/images/placeholders/1280x960.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-5">Raza</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 
+                **** Fin template ****
+               -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+        ===================================
+        IMAGENES
+        ===================================
+      -->
+      <div class="container tab-section is-hidden" id="images-search">
+        <div class="container is-flex mb-3">
+          <p class="breed-search-label">Raza:</p>
+          <div class="select">
+            <select id="breed-search-img-dropdown">
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </div>
+        </div>
+        <div class="columns"  id="image-search-results">
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="https://bulma.io/images/placeholders/1280x960.png"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <span class="icon has-text-primary is-large">
+                  <i class="fas fa-lg fa-heart"></i>
+                </span>
+                <span class="icon has-text-success is-large">
+                  <i class="fas fa-lg fa-thumbs-up"></i>
+                </span>
+                <span class="icon has-text-danger is-large">
+                  <i class="fas fa-lg fa-thumbs-down"></i>
+                </span>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-4 is-flex is-flex-centered">
+          <button class="button is-danger" id="previous-page-btn">
+            Anterior
+          </button>
+          <div class="content">
+            <p id="page">Página 0</p>
+          </div>
+          <button class="button is-success" id="next-page-btn">
+            Siguiente
+          </button>
+        </div>
+      </div>
+      <!--
+        ===================================
+        VOTOS
+        ===================================
+      -->
+      <div class="container tab-section is-hidden" id="votes">
+        <div class="select mb-2">
+          <select id="breed-dropdown">
+            <option>Todos</option>
+            <option>Positivos</option>
+            <option>Negativos</option>
+          </select>
+        </div>
+        <div class="columns" id="votes-list">
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="https://bulma.io/images/placeholders/1280x960.png"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <span class="icon has-text-danger is-large">
+                  <i class="fas fa-lg fa-trash-alt"></i>
+                </span>
+              </footer>
+            </div>  
+          </div>   
+        </div>
+      </div>
+      <!--
+        ===================================
+        FAVORITOS
+        ===================================
+      -->
+      <div class="container tab-section is-hidden" id="favourites">
+        <div class="columns" id="favourites-list">
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="https://bulma.io/images/placeholders/1280x960.png"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <span class="icon has-text-danger is-large">
+                  <i class="fas fa-lg fa-trash-alt"></i>
+                </span>
+              </footer>
+          </div>   
+        </div>
+      </div>
+    </section>
+    <!--
+      ===================================
+      MODAL
+      ===================================
+    -->
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <div class="field">
+            <label class="label">Usuario</label>
+            <div class="control">
+              <input
+              class="input is-medium"
+              type="text"
+              placeholder="Usuario"
+              id="user-input"
+            />
+            </div>
+          </div>
+          <div class="field">
+            <p class="control">
+              <button class="button is-danger" id='cancel-change-user-btn'>
+                Cancelar
+              </button>
+              <button class="button is-success" id='change-user-btn'>
+                Cambiar
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </body>
+</html>
