@@ -34,7 +34,7 @@ Darle algunos estilos, por ejemplo:
 
 Crear un componente `StarRating` que tome un prop `type` con los valores `filled` o `empty` y muestre un ícono de una estrella llena o vacía según el caso
 
-Crear un componente `Rating` que tome un prop `score` que sea del 1 al 5 y renderice 5 estrellas, siendo valor de `score` la cantidad de `StarRating` con `type` `filled`, mientras las restantes son `type` `empty` 
+Crear un componente `Rating` que tome un prop `score` que sea del 1 al 5 y renderice 5 estrellas, siendo valor de `score` la cantidad de `StarRating` con `type` `filled`, mientras las restantes son `type` `empty`, por ejemplo: ★★★✩✩
 
 ## Alert
 
