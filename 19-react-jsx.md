@@ -1,5 +1,15 @@
 # React - JSX
 
+## Card
+
+- Crear un componente `Card` que renderice un elemento `article` y que pueda contener elementos dentro suyo
+- Crear un componente `CardTitle` que renderice un elemento `h3` y que pueda contener texto dentro suyo
+- Crear un componente `CardDescription` que renderice un elemento `p` y que pueda contener texto dentro suyo
+- Crear un componente `CardActions` que renderice un elemento `div` y que pueda contener elementos dentro suyo. Dicho div debe contener la propiedad `display: flex`
+- Crear un componente `CardAction` que renderice un elemento `button` y que pueda contener texto dentro suyo
+
+## Layout
+
 ### Header
 
 - Crear un componente `Header` que renderice un elemento `header` y que pueda contener elementos dentro suyo
