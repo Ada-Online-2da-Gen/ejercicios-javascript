@@ -5,12 +5,12 @@ Crear un componente especializado `Menu`.
 - Debe renderizar un menú con ítems (un `ul` con `li` anidados)
 - Los ítems deben poder anidarse dentro de `Menu`
 - Cada ítem 
-  - puede estar activo
-  - puede estar deshabilitado
   - puede contener
     - un ícono a la izquierda
     - texto (principal)
     - texto o un componente a la derecha
+  - puede estar activo
+  - puede estar deshabilitado
 - Puede contener submenús
   - puede contener un título con un ícono a la izquierda
   - pueden estar abiertos o cerrados
@@ -18,6 +18,9 @@ Crear un componente especializado `Menu`.
   - los íconos de apertura y cierra pueden ser configurables
   - los ítems puede anidarse dentro de submenú
 - Puede contener divisores (`hr`)
+- Cada componente debe permitir agregar clases y estilos customs, así como extender los props por defecto de React
+- Exportar el componente principal con sus subcomponentes en un mismo archivo
+- Usar PropTypes
 
 ### Ejemplo
 
