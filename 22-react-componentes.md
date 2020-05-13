@@ -9,8 +9,7 @@ Crear un componente especializado `Menu`.
     - un ícono a la izquierda
     - texto (principal)
     - texto o un componente a la derecha
-  - puede estar activo
-  - puede estar deshabilitado
+  - puede tener dos estatus: active y disabled (con sus propios estilos)
 - Puede contener submenús
   - puede contener un título con un ícono a la izquierda
   - pueden estar abiertos o cerrados
