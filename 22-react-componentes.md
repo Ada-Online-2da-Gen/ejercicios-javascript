@@ -4,11 +4,13 @@ Crear un componente especializado `Menu`.
 
 - Debe renderizar un menú con ítems (un `ul` con `li` anidados)
 - Los ítems deben poder anidarse dentro de `Menu`
-- Cada ítem puede contener
-  - Un ícono a la izquierda
-  - Texto
-  - Puede contener texto o un componente a la derecha
-- Cada ítems puede deshabilitarse
+- Cada ítem 
+  - puede estar activo
+  - puede estar deshabilitado
+  - puede contener
+    - un ícono a la izquierda
+    - texto (principal)
+    - texto o un componente a la derecha
 - Puede contener submenús
   - puede contener un título con un ícono a la izquierda
   - pueden estar abiertos o cerrados
