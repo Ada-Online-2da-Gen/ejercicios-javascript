@@ -20,7 +20,6 @@ Crear un componente especializado `Menu`.
 - Puede contener divisores (`hr`)
 - Cada componente debe permitir agregar clases y estilos customs, así como extender los props por defecto de React
 - Exportar el componente principal con sus subcomponentes en un mismo archivo
-- Usar PropTypes
 
 ### Ejemplo
 
