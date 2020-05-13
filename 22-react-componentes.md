@@ -13,7 +13,7 @@ Crear un componente especializado `Menu`.
 - Puede contener submenús
   - puede contener un título con un ícono a la izquierda
   - pueden estar abiertos o cerrados
-  - cuando está abierto debe mostrar una flecha hacia arriba como ícono a la derecha, cuando está cerrado una flecha hacia abajo
+  - cuando está abierto debe mostrar una flecha hacia abajo como ícono a la derecha, cuando está cerrado una flecha hacia la derecha
   - los íconos de apertura y cierra pueden ser configurables
   - los ítems puede anidarse dentro de submenú
 - Puede contener divisores (`hr`)
