@@ -1,0 +1,30 @@
+@function getColor($colorName) {
+  @if not map-has-key($colors, $colorName) {
+    @error '#{$colorName} no es un color válido';
+  }
+  @return map-get($colors, $colorName);
+}
+
+// $themes
+// light
+// background: #FFF
+
+@function getThemeColor($colorName) {
+  $theme: map-get($themes, 'dark');
+  @return map-get($theme, $colorName);
+}
+
+@mixin color($colorName) {
+  color: getColor($colorName);
+}
+
+@mixin backgroundColor($colorName) {
+  background-color: getColor($colorName);
+}
+
+@mixin propColor($key, $colorName) {
+  #{$key}: getThemeColor($colorName);
+}
+
+// `${variable}`
+// '#{$variable}'

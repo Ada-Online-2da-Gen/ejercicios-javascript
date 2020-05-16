@@ -1,0 +1,56 @@
+@import 'styles/base/_colors.scss';
+@import 'styles/base/_themes.scss';
+@import 'styles/utils/_colors.scss';
+
+$themes: (
+  light: (
+    background: #fff,
+    text: #000,
+  ),
+  dark: (
+    background: #000,
+    text: #fff,
+  ),
+);
+
+@function getThemeColor($colorName: 'text') {
+  $theme: map-get($themes, 'dark');
+  @return map-get($theme, $colorName);
+}
+
+// html[theme='light'] h1 {
+//   color: black;
+// }
+// html[theme='dark'] h1 {
+//   color: white;
+// }
+
+// Reglas de CSS que queremos generar
+// html.theme-light h1 {
+//   color: black;
+// }
+// html.theme-dark h1 {
+//   color: white;
+// }
+
+@mixin themeColor($prop, $colorName: '') {
+  // Recorremos el mapa $themes y por cada propiedad $themeName
+  @each $themeName, $themeValues in $themes {
+    // accedemos al mapa guardado en la propiedad $themeName de $themes
+    $theme: map-get($themes, $themeName);
+    // creamos una regla para dicho tema con el elemento en el que se incluye el mixin
+    html[theme='#{$themeName}'] & {
+      // asignamos la propiedad css accediendo al color del tema en específico
+      #{$prop}: map-get($theme, $colorName);
+    }
+  }
+}
+
+h1 {
+  @include themeColor('color', 'text') // color: getThemeColor('text');
+    // @include propColor('color', 'text');;;;;;;;;;;;;;;;
+}
+
+body {
+  @include themeColor('background-color', 'background');
+}
