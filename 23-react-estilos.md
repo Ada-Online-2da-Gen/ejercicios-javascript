@@ -1,4 +1,8 @@
 
+# Estilando componentes con Sass
+
+## Consignas
+
 1. Crear la siguiente carpeta dentro de src
 
 ```
@@ -50,10 +54,13 @@ h1 {
   @include color('text');
 }
 ```
+<br>
 
-8. Todos los componentes deben extender las props por default de React
+## Crear los siguientes componentes
 
-## `Icon`
+Todos los componentes deben extender las props por default de React
+
+### `Icon`
 
 - Props
   - name
@@ -78,7 +85,7 @@ const SelectedIcon = ICONS.home
 <SelectedIcon />
 ```
 
-## Button
+### `Button`
 
 - Debe renderizar un componente `button`
 - Props
@@ -88,7 +95,7 @@ const SelectedIcon = ICONS.home
   - roundend (para border-radius)
   - children (el texto dentro del botón)
 
-## `Tag`
+### `Tag`
 
 - Debe renderizar un componente `span`
 - Props
@@ -97,7 +104,7 @@ const SelectedIcon = ICONS.home
   - rounded
   - children (el texto dentro del span)
 
-## `Title`
+### `Title`
 
 - Debe renderizar un elemento h1-h6
 - Props
@@ -106,7 +113,7 @@ const SelectedIcon = ICONS.home
   - align: left, right, center (default: left)
   - children: el texto a incluir en el elemento p 
 
-## `Text`
+### `Text`
 
 - Debe renderizar un elemento p
 - Props
@@ -115,7 +122,7 @@ const SelectedIcon = ICONS.home
   - align: left, right, center (default: left)
   - children: el texto a incluir en el elemento p 
 
-## `Flex`
+### `Flex`
 
 - Debe renderizar un componente `div`
 - Debe ser un contener flexible
