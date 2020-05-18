@@ -171,3 +171,13 @@ Porque de esta forma cada vez que cambiamos algo en `$colors` tendríamos que ca
 La idea es generar reglas como la anterior de forma dinámica a partir del map. Usar para eso mixins, el selector &, `@each` y interpolación. 
 
 Recuerden que los estilos de los componentes se usan con módulos, por lo que en `text.module.scss` vamos a tener que importar `styles/main.scss` para acceder a todas las variables, mixins y funciones que tengamos
+
+Como tip, el componente que tendríamos sería algo asi:
+
+```jsx
+import styles from 'component.module.scss'
+
+const Component = ({size}) => {
+  return <div className={styles[`size-${size}`]} />
+}
+```
