@@ -1,0 +1,10 @@
+@function mapGet($map, $key) {
+  @if not map-has-key($map, $key) {
+    @error '#{$key} no es una propiedad válida de #{$map}';
+  }
+  @return map-get($map, $key);
+}
+
+@function getSize($size) {
+  @return mapGet($sizes, $size);
+}

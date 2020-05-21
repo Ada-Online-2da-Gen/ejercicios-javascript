@@ -1,0 +1,18 @@
+@import 'styles/main';
+
+.button {
+  @include generatedClasses($border-radius, 'rounded', 'border-radius');
+  @include buttonColors;
+  @include buttonSizes;
+
+  display: flex;
+  align-items: center;
+
+  & [class*='Icon']:nth-child(1) {
+    margin-right: mapGet($sizes, 2);
+  }
+
+  & [class*='Icon']:nth-child(2) {
+    margin-left: mapGet($sizes, 2);
+  }
+}

@@ -1,0 +1,19 @@
+@function color($name, $shade: 500) {
+  @if ($shade < 100 or $shade > 900 or $shade % 100 != 0) {
+    @error '$shade debe ser un múltiplo de 100 entre 100 y 900';
+  }
+
+  $color: mapGet($colors, $name);
+
+  @if ($shade > 500) {
+    $amount: $shade / 10 - 50;
+    @return darken($color, $amount);
+  }
+  @if ($shade < 500) {
+    $amount: 50 - $shade / 10;
+    @return lighten($color, $amount);
+  }
+  @if ($shade == 500) {
+    @return $color;
+  }
+}

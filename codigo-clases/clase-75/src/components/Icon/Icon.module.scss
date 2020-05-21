@@ -1,0 +1,7 @@
+@import 'styles/main';
+
+.icon {
+  @include generatedClasses($sizes, 'size', 'width');
+  @include generatedClasses($sizes, 'size', 'height');
+  @include generatedClasses($colors, 'color', 'color');
+}

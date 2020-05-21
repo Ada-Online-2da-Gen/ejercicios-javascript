@@ -1,0 +1,22 @@
+$buttons: (
+  xs: (
+    height: getSize(8),
+    padding: 0 getSize(2),
+    font-size: getSize(3),
+  ),
+  sm: (
+    height: getSize(9),
+    padding: 0 getSize(3),
+    font-size: getSize(4),
+  ),
+  md: (
+    height: getSize(10),
+    padding: 0 getSize(5),
+    font-size: getSize(5),
+  ),
+  lg: (
+    height: getSize(11),
+    padding: 0 getSize(8),
+    font-size: getSize(6),
+  ),
+);

@@ -1,0 +1,27 @@
+@mixin buttonColors {
+  @each $key, $value in $colors {
+    &.color-#{$key} {
+      background-color: $value;
+      transition: 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: color($key, 400);
+      }
+
+      &:active {
+        background-color: color($key, 600);
+      }
+    }
+  }
+}
+
+@mixin buttonSizes {
+  @each $size, $map in $buttons {
+    &.size-#{$size} {
+      @each $key, $value in map-get($buttons, $size) {
+        #{$key}: $value;
+      }
+    }
+  }
+}

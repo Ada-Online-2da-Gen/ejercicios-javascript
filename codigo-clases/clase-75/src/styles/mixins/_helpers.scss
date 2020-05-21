@@ -1,0 +1,7 @@
+@mixin generatedClasses($map, $sufix, $property) {
+  @each $key, $value in $map {
+    &.#{$sufix}-#{$key} {
+      #{$property}: $value;
+    }
+  }
+}
