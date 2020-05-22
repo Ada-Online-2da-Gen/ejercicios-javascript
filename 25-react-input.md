@@ -1,13 +1,5 @@
 # Práctica con estados e inputs
 
-## CurrencyConverter
-
-Crear un componente `CurrencyConverter` que
-- renderice dos `inputs` de número con sus labels, uno representando la moneda en pesos y otro la moneda en dólares
-- cuando se escriba algo en cualquiera de los inputs, el otro debe actualizar automáticamente a medida que se va escribiendo. Por ejemplo, si ingreso 1 en el input de dolares, el de pesos se debe actualizar a 65, y si ingreso 130 en el de pesos, el de dolares se debe actualizar a 2
-
-**EXTRA:** agregar props para definir las monedas y el valor de cambio
-
 ## Form
 
 Crear un component `Form` que
@@ -15,6 +7,14 @@ Crear un component `Form` que
 - al apretar enviar, debe chequear que los inputs no estén vacíos
 - si alguno está vacío, debe mostrar un mensaje que diga "Por favor, complete todos los campos"
 - si ninguno está vacío, debe mostrar un mensaje que diga "Gracias por completar el formulario, sus datos han sido guardados" y debe vaciar todos los campos
+
+## CurrencyConverter
+
+Crear un componente `CurrencyConverter` que
+- renderice dos `inputs` de número con sus labels, uno representando la moneda en pesos y otro la moneda en dólares
+- cuando se escriba algo en cualquiera de los inputs, el otro debe actualizar automáticamente a medida que se va escribiendo. Por ejemplo, si ingreso 1 en el input de dolares, el de pesos se debe actualizar a 65, y si ingreso 130 en el de pesos, el de dolares se debe actualizar a 2
+
+**EXTRA:** agregar props para definir las monedas y el valor de cambio
 
 ## SearchList
 
