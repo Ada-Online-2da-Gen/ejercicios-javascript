@@ -47,5 +47,26 @@ Crear un componente `EditableList` que
 - al apretar enter el `input` debe vaciarse
 - si se hace click en un li, este debe eliminarse de la lista
 
-## Score
-## Votation
+## ScoreBoard
+
+Crear un componente `## ScoreBoard` que renderice un `input` y una lista de `PlayerScore` que
+- al escribir algo en el `input` y apretar "enter", agregue un nuevo `PlayerScore` a la lista
+- si el `input` está vacío, no debe agregar nada
+- cuando se apreta "enter", el `input` debe vaciarse
+- `PlayerScore` contiene la prop `player` que toma un string, y se llena con el valor ingresado en el `input`
+- `PlayerScore` renderiza un elemento `p` para mostrar el nombre (contenido en la prop `player`), un elemento `p` para mostrar el puntaje (que comienza en 0) y dos botones, uno para incrementar el puntaje y otro para disminuirlo
+
+Ejemplo
+```
+[Ingrese un nuevo nombre...]
+
+Jeff    100 puntos    [+][-]
+Britta  50 puntos     [+][-]
+Abed    500 puntos    [+][-]
+Troy    200 puntos    [+][-]
+Annie   250 puntos    [+][-]
+Shirley 400 puntos    [+][-]
+Pierce  20 puntos     [+][-]
+```
+
+
