@@ -10,3 +10,12 @@ Crear un hook `useArray` que tome por valor inicial un array, y devuelva un arra
 - `updateById(id, newProperties)`
 - `removeById(id)`
 - `clear()`
+
+Ejemplo:
+
+```js
+const [todos, todoActions] = useArray([])
+
+// ...
+todoActions.add({id: 0, title: 'Comprar cosas'})
+```
