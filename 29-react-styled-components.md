@@ -1,6 +1,6 @@
 # Styled Components
 
-Usando `styled-components` (y para íconos, [styled-icons](https://styled-icons.js.org/))
+Usando `styled-components` (y para íconos, [styled-icons](https://styled-icons.js.org/)) hacer los siguientes ejercicios.
 
 ## Calculadora
 
@@ -26,7 +26,7 @@ Crear una tarjeta de contacto, que tenga las siguientes props:
 
 El componente renderiza algo similar a esto a nivel de estructura:
 
-![](https://imgur.com/a/5pN04N6)
+![](https://i.imgur.com/7G13YlN.png)
 
 El avatar se genera con las iniciales del nombre y apellido del contacto, y un color de fondo aleatorio.
 
