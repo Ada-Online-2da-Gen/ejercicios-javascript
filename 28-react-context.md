@@ -90,5 +90,5 @@ El comportamiento de `Sidebar` lo pueden ver en acción [acá](https://uidesignd
 
 [Array de tags](https://uidesigndaily.com/api/v1/globals/tags).
 
-**EXTRA 1:** Agregar en `Filters` un botón que muestre el `Sidebar` y en `Sidebar` un botón para ocultarlo (como en la página).
+**EXTRA 1:** Agregar en `Filters` un botón que muestre el `Sidebar` y en `Sidebar` un botón para ocultarlo (como en la página).  
 **EXTRA 2:** Agrupar las tags por su primer letra, como en la página.
