@@ -70,3 +70,23 @@ App
 
 Obtener el JSON de los datos [acá](https://next.json-generator.com/EyTMhvV6O).
 
+
+## Tags
+
+```
+App
+  Sidebar
+    TagControl
+    Tags
+  Filters
+    SelectedTags
+```
+
+- `Tags` tiene una lista de componentes `Tag`. Cuando se clickea una `Tag`, esa tag se selecciona, cuando se la vuelve a clickear, se deselecciona. El estar seleccionada se representa con una diferencia visual (cualquiera: borde o color distinto, algún ícono, etc.)
+- En `SelectedTags` aparecen *solo* las tags que están seleccionadas (ssando el componente `Tag`). Cuando se clickea una, esta se deselecciona, y por lo tanto desparece de `SelectedTags`.  
+- `TagControl` tiene un texto mostrando la cantidad de tags seleccionadas y un botón `Clear`. Cuando se apreta `Clear`, se deseleccionan todas las tags.
+
+El comportamiento de `Sidebar` lo pueden ver en acción [acá](https://uidesigndaily.com/) cuando cliquean en `Filter by tags`.
+
+**EXTRA 1:** Agregar en `Filters` un botón que muestre el `Sidebar` y en `Sidebar` un botón para ocultarlo (como en la página).
+**EXTRA 2:** Agrupar las tags por su primer letra, como en la página.
