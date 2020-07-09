@@ -1,6 +1,32 @@
 # React Router
 
-## 1) Rutas Anidadas
+## 1) Parámetro de ruta
+
+Usando la API de Marvel, crear la siguientes rutas
+
+|Ruta|Descripción
+|---|---|
+| `/characters`     |listado de personajes
+| `/characters/:id` | info de personaje, con listado de comics en los que aparece
+| `/comics`     |listado de personajes
+| `/comics/:id` | info de comic, con listado de personajes que aparecen en este
+
+- Agregar un header con links a lista de personajes y comics. Los links deben tener estilos cuando se está en una vista
+- Agregar en vista de info de personaje y comic un botón para volver atrás
+
+**EXTRA**
+
+(hacer después de los demás eer
+
+- Agregar un paginado a la listas, usando `query params`
+- Agregar en un `aside`, a medida que se vaya visitando, la lista de los últimos 5 personajes y cómics visitados (por separado), y que se pueda clickear en ellos e ir a la vista de detalle correspondiente
+
+**EXTRA EXTRA**
+
+- Hay 3 entidades más, eventos, series e historias, las cuales están todas relacionadas entre sí. Se puede ir agregando estas entidades (al menos una) de la misma forma que las anteriores, mostrando un listado, y en el detalle agregar también la información de demás entidades (por ejemplo, si se agrega eventos, en personaje y comics tienen que aparecer eventos, y en evento tienen que aparecer personajes y comics). 
+- Tratar de reutilizar la mayor cantidad de componentes posibles.
+
+## 2) Rutas Anidadas
 
 Crear una `aside` con una navegación con la siguiente estructura de rutas anidadas (usar listas anidadas):
 
@@ -28,7 +54,7 @@ Crear una `aside` con una navegación con la siguiente estructura de rutas anida
 - Las rutas anidadas tienen son con parámetros, no harcodeadas, por ejemplo, todas las de cultura podrían ser algo como: `/cultura/:subcategoria`
 
 
-## 2) Query Params
+## 3) Query Params
 
 - Crear un listado de productos con filtros. 
 - El estado de los filtros se tiene que manejar mediante **query param**.
@@ -61,26 +87,3 @@ Usar este [JSON de productos](https://next.json-generator.com/api/json/get/N1-jR
 
 - Agregar para un select para sortear los componentes por precio de mayor a menor y viceversa, usando también query params
 
-## 3) Estado
-
-Usando la API de Marvel, crear la siguientes rutas
-
-|Ruta|Descripción
-|---|---|
-| `/characters`     |listado de personajes
-| `/characters/:id` | info de personaje, con listado de comics en los que aparece
-| `/comics`     |listado de personajes
-| `/comics/:id` | info de comic, con listado de personajes que aparecen en este
-
-- Agregar un header con links a lista de personajes y comics. Los links deben tener estilos cuando se está en una vista
-- Agregar en vista de info de personaje y comic un botón para volver atrás
-
-**EXTRA**
-
-- Agregar un paginado a la listas, usando `query params`
-- Agregar en un `aside`, a medida que se vaya visitando, la lista de los últimos 5 personajes y cómics visitados (por separado), y que se pueda clickear en ellos e ir a la vista de detalle correspondiente
-
-**EXTRA EXTRA**
-
-- Hay 3 entidades más, eventos, series e historias, las cuales están todas relacionadas entre sí. Se puede ir agregando estas entidades (al menos una) de la misma forma que las anteriores, mostrando un listado, y en el detalle agregar también la información de demás entidades (por ejemplo, si se agrega eventos, en personaje y comics tienen que aparecer eventos, y en evento tienen que aparecer personajes y comics). 
-- Tratar de reutilizar la mayor cantidad de componentes posibles.
