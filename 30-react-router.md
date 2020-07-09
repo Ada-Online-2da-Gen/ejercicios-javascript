@@ -1,6 +1,32 @@
 # React Router
 
-## 1) Rutas
+## 1) Rutas Anidadas
+
+Crear una `aside` con una navegación con la siguiente estructura de rutas anidadas (usar listas anidadas):
+
+```
+- Sociedad
+- Política
+  - Nacional
+  - Internacional
+- Cultura
+  - Cine
+  - Música
+  - Teatro
+  - Museos
+- Ciencia
+  - Física
+  - Astronomía
+  - Medicina
+- Deportes  
+```
+
+- Cada vista tiene que tener un título `h1` con el nombre de vista y algunos párrafos con `lorem ipsum`
+- Cuando se selecciona una vista, el link tiene que quedar marcado con un estilo distinto en la navegación
+- Cuando se selecciona una vista anidada, tienen que quedar marcadas ambos links (si se selecciona Museos, tiene que marcarse Cultura y Museos)
+- Cuando se selecciona una vista anidada, tiene que mostrar la vista padre y la vista anidada (si se selecciona Museos, tiene que mostrarse Cultura y Museos)
+- Las rutas anidadas tienen son con parámetros, no harcodeadas, por ejemplo, todas las de cultura podrían ser algo como: `/cultura/:subcategoria`
+
 
 ## 2) Query Params
 
