@@ -16,7 +16,7 @@ Usando la API de Marvel, crear la siguientes rutas
 
 **EXTRA**
 
-(hacer después de los demás eer
+(hacer después de los demás ejercicios)
 
 - Agregar un paginado a la listas, usando `query params`
 - Agregar en un `aside`, a medida que se vaya visitando, la lista de los últimos 5 personajes y cómics visitados (por separado), y que se pueda clickear en ellos e ir a la vista de detalle correspondiente
