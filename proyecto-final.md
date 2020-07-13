@@ -4,38 +4,31 @@
 
 Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/introduction), crear una *single page application* 
 
+## Criterios de aceptación
+
 ## Vistas
 
 <br>
 
-|Nombre|Ruta|Subvista de|Elementos|Comentarios
+|Nombre|Ruta|Descripción|Comentarios|Subvista de |
 |---|---|---|---|---|
 | Home | `/` |
 | Películas | `/movies` |
-| Películas por categoría | `/movie/category/:categoryId` |
-| Películas por género | `/movie/genre/:genreId` |
-| Detalle de película | `/movie/:movieId` |
-| Info de película | `/movie/:movieId/info` | Detalle de película |
-| Elenco de película | `/movie/:movieId/cast` | Detalle de película |
-| Películas similares |  `/movie/:movieId/similar` | Detalle de película |
+| Películas por categoría | `/movie/category/:categoryId` |Listado de cards de series con paginado|   **Categorías:** `popular`, `top_rated` y `now_playing`
+| Películas por género | `/movie/genre/:genreId` |Listado de cards de series con paginado
+| Detalle de película | `/movie/:movieId` | Hero con imagen. Navegación de subvistas |
+| Info de película | `/movie/:movieId/info` ||| Detalle de película |
+| Elenco de película | `/movie/:movieId/cast` |Listado de cards del elenco *sin paginado*|| Detalle de película |
+| Películas similares |  `/movie/:movieId/similar` |Listado de cards de películas similares *sin paginado*|| Detalle de película |
 | Series | `/tv` |
-| Series por categoría | `/tv/category/:categoryId` |
-| Series por género | `/tv/genre/:genreId` |
-| Detalle de serie | `/tv/:tvId` |
-| Info de serie | `/tv/:tvId/info` | Detalle de serie |
-| Temporada de serie | `/tv/:tvId/seasons/:season` | Detalle de serie |
-| Series similares |  `/tv/:tvId/similar` | Detalle de serie |
+| Series por categoría | `/tv/category/:categoryId` | Listado de cards de series con paginado |   **Categorías:** `popular`, `top_rated` y `on_the_air`
+| Series por género | `/tv/genre/:genreId` | Listado de cards de series con paginado
+| Detalle de serie | `/tv/:tvId` | Hero con imagen. Navegación de subvistas |
+| Info de serie | `/tv/:tvId/info` ||| Detalle de serie |
+| Temporada de serie | `/tv/:tvId/seasons/:season` |Select con temporadas. Listado de cards de episodios. Cantidad de episodios en temporada seleccionada.|| Detalle de serie |
+| Series similares |  `/tv/:tvId/similar` |Listado de cards de series similares *sin paginado*|| Detalle de serie |
 
 <br>
-
-- **Categorías:**
-  - popular
-  - top_rated
-  - now_playing
-
-  - popular
-  - top_rated
-  - on_the_air
 
 ## Componentes obligatorios
 
@@ -44,3 +37,7 @@ Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/i
 ### Paginado
 
 ### Rating
+
+## Otros requisitos
+
+- Todas las vistas tienen que tener un título
