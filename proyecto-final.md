@@ -30,25 +30,27 @@ Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/i
 
 <br>
 
-|Nombre|Ruta|Descripción|Subvista de |
-|---|---|---|---|
+|Nombre|Ruta|Descripción
+|---|---|---|
 | **Home** | `/` |
 | **Películas** | `/movies` |
 | Películas por categoría | `/movie/category/:categoryId` |Listado de cards de series con paginado|  
 | Detalle de película | `/movie/:movieId` | Hero con imagen. Navegación de subvistas |
-| Info de película | `/movie/:movieId/info` |Poster de película con información| Detalle de película |
-| Elenco de película | `/movie/:movieId/cast` |Listado de cards del elenco *sin paginado*| Detalle de película |
-| Películas similares |  `/movie/:movieId/similar` |Listado de cards de películas similares *sin paginado*| Detalle de película |
+| Info de película (1)| `/movie/:movieId/info` |Poster de película con información |
+| Elenco de película (1)| `/movie/:movieId/cast` |Listado de cards del elenco *sin paginado*|
+| Películas similares (1)|  `/movie/:movieId/similar` |Listado de cards de películas similares *sin paginado*|
 | **Series** | `/tv` |
 | Series por categoría | `/tv/category/:categoryId` | Listado de cards de series con paginado
 | Detalle de serie | `/tv/:tvId` | Hero con imagen. Navegación de subvistas |
-| Info de serie | `/tv/:tvId/info` |Poster de serie con información| Detalle de serie |
-| Temporada de serie | `/tv/:tvId/season/:seasonNumber` |Select con temporadas. Listado de cards de episodios. Cantidad de episodios en temporada seleccionada.| Detalle de serie |
-| Series similares |  `/tv/:tvId/similar` |Listado de cards de series similares *sin paginado*| Detalle de serie |
+| Info de serie (2)| `/tv/:tvId/info` |Poster de serie con información|
+| Temporada de serie (2)| `/tv/:tvId/season/:seasonNumber` |Select con temporadas. Listado de cards de episodios. Cantidad de episodios en temporada seleccionada.
+| Series similares (2)|  `/tv/:tvId/similar` |Listado de cards de series similares *sin paginado*|
 | **Búsqueda** | '/discover/` | Filtros de búsqueda y listado de cards de resultados con paginado |
 <br>
 
-Las vistas marcadas en negrita son las principales y deben ser accesibles desde cualquier otra vista (estar en la navegación principal)
+- Las vistas marcadas en negrita son las principales y deben ser accesibles desde cualquier otra vista (estar en la navegación principal)
+- (1) Subvista de **Detalle de película**
+- (2) Subvista de **Detalle de serie**
 
 ## Comentarios de la vistas
 
