@@ -25,6 +25,7 @@ Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/i
   - dar feedback al usuario: cuando hay errores, cuando no hay resultados, cuando se están cargando los resultados, etc
 - Legibilidad de código
 - Estructura del proyecto
+- Uso de PRs por feature
 
 ## Vistas
 
