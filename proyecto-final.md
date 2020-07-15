@@ -148,14 +148,20 @@ Debe tener un ??? con dos modos, normal y avanzado. La búsqueda se realiza cuan
 - Debe aceptar una página máxima, una página actual y un callback para el evento `onPageChange`
 - El componente debe tener el siguiente comportamiento:
 - Si hay 7 páginas o menos debe mostrarlas todas
+
 `[1, 2, 3, 4, 5, 6, 7]`
 - Si hay más de 7 páginas, debe mostrar 7 elementos máximos
+
 `[1, 2, 3, 4, 5, ..., 10]`
 - Si se selecciona hasta un rango de 4 páginas desde atrás o adelante, debe seguirlo mostrando de la siguiente forma: el rango de 5 páginas en el que se esté (inicial o final), puntos suspensivos, y la página extrema contraria
+
 `[1, 2, 3, 4, 5, ..., 10]`
+
 `[1, ..., 6, 7, 8, 9, 10]`
 - Si se selecciona más allá de 4 páginas, se debe mostrarlo de la siguiente forma: las dos páginas en los extremos, seguidas de puntos suspensivos, y 3 páginas con la actual en el medio y la previa y la siguiente a los costados
+
 `[1, ..., 4, 5, 6, ..., 10]`
+
 `[1, ..., 5, 6, 7, ..., 10]`
 - El paginado tiene que tener también flechas a ambos costados para avanzar o retroceder de página, las cuales tienen que deshabilitarse cuando se llegan a los extremos
 - Componente de ejemplo: [Basic Pagination](https://material-ui.com/components/pagination/#basic-pagination)
