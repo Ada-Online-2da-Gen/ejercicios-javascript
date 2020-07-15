@@ -2,7 +2,7 @@
 
 ## Consigna
 
-Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/introduction), crear una *Single Page Application* 
+Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/introduction), crear una *Single Page Application* para buscar series y películas.
 
 [Ejemplo](https://movies.jason.codes/) (Para tener una idea aproximada)
 
@@ -32,21 +32,23 @@ Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/i
 
 |Nombre|Ruta|Descripción|Subvista de |
 |---|---|---|---|
-| Home | `/` |
-| Películas | `/movies` |
+| **Home** | `/` |
+| **Películas** | `/movies` |
 | Películas por categoría | `/movie/category/:categoryId` |Listado de cards de series con paginado|  
 | Detalle de película | `/movie/:movieId` | Hero con imagen. Navegación de subvistas |
-| Info de película | `/movie/:movieId/info` ||| Detalle de película |
+| Info de película | `/movie/:movieId/info` |Poster de película con información| Detalle de película |
 | Elenco de película | `/movie/:movieId/cast` |Listado de cards del elenco *sin paginado*| Detalle de película |
 | Películas similares |  `/movie/:movieId/similar` |Listado de cards de películas similares *sin paginado*| Detalle de película |
-| Series | `/tv` |
+| **Series** | `/tv` |
 | Series por categoría | `/tv/category/:categoryId` | Listado de cards de series con paginado
 | Detalle de serie | `/tv/:tvId` | Hero con imagen. Navegación de subvistas |
-| Info de serie | `/tv/:tvId/info` ||| Detalle de serie |
-| Temporada de serie | `/tv/:tvId/seasons/:season` |Select con temporadas. Listado de cards de episodios. Cantidad de episodios en temporada seleccionada.| Detalle de serie |
+| Info de serie | `/tv/:tvId/info` |Poster de serie con información| Detalle de serie |
+| Temporada de serie | `/tv/:tvId/season/:seasonNumber` |Select con temporadas. Listado de cards de episodios. Cantidad de episodios en temporada seleccionada.| Detalle de serie |
 | Series similares |  `/tv/:tvId/similar` |Listado de cards de series similares *sin paginado*| Detalle de serie |
-| Búsqueda | '/search/` | Filtros de búsqueda y listado de cards de resultados con paginado |
+| **Búsqueda** | '/discover/` | Filtros de búsqueda y listado de cards de resultados con paginado |
 <br>
+
+Las vistas marcadas en negrita son las principales y deben ser accesibles desde cualquier otra vista (estar en la navegación principal)
 
 ## Comentarios de la vistas
 
@@ -57,12 +59,32 @@ Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/i
 - `top_rated` 
 - `now_playing`
 
+## Info de película
+
+Debe contener los siguientes datos:
+
+- Sinopsis
+- Géneros
+- Duración
+- Fecha de estreno
+- Presupuesto
+
 ### Series por categoría
 
 **Categorías:** 
 - `popular` 
 - `top_rated` 
 - `on_the_air`
+
+## Info de serie
+
+Debe contener los siguientes datos:
+
+- Sinopsis
+- Géneros
+- Fecha de estreno
+- Cantidad de temporadas
+- Cantidad de episodios
 
 ### Búsqueda
 
@@ -96,6 +118,25 @@ Debe tener un ??? con dos modos, normal y avanzado. La búsqueda se realiza cuan
 - El select con los años de estreno tienen que generarse dinámicamente, para eso obtener la película o serie (dependiendo de lo elegido) más antigua, obtener el año de estreno, y completar con los años restantes hasta la actualidad
 - Tanto género como año de estreno tienen que tener una opción general, como "Todos" o "Cualquiera". Cuando se selecciona, no se tiene que incluir dicho parámetro de búsqueda en la llamada a la API
 
+## Comentarios de componentes
+
+- `Card de película` y `Card de serie` deben tener:
+  - Imagen de poster
+  - Titulo
+  - Rating con puntaje
+  
+- `Card de episodio` debe tener:
+  - Imagen de episodio
+  - Número de episodio (respecto a la temporada, no total)
+  - Titulo
+  - Sinopsis  
+  - Fecha de estreno
+  
+- `Card de elenco` debe tener:
+  - Imagen de la persona
+  - Nombre y apellido de la persona
+  - Personaje que interpreta
+
 ## Componentes obligatorios
 
 ### CardList
@@ -128,7 +169,3 @@ Debe tener un ??? con dos modos, normal y avanzado. La búsqueda se realiza cuan
 [Componente de ejemplo](https://material-ui.com/components/rating/) (Para tener una idea aproximada)
 
 ### Hero
-
-## Otros requisitos
-
-- Todas las vistas tienen que tener un título
