@@ -62,7 +62,7 @@ Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/i
 - `top_rated` 
 - `now_playing`
 
-## Info de película
+### Info de película
 
 Debe contener los siguientes datos:
 
@@ -79,7 +79,7 @@ Debe contener los siguientes datos:
 - `top_rated` 
 - `on_the_air`
 
-## Info de serie
+### Info de serie
 
 Debe contener los siguientes datos:
 
