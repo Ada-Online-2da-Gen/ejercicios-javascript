@@ -45,7 +45,7 @@ Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/i
 | Info de serie (2)| `/tv/:tvId/info` |Poster de serie con información|
 | Temporada de serie (2)| `/tv/:tvId/season/:seasonNumber` |Select con temporadas. Listado de cards de episodios. Cantidad de episodios en temporada seleccionada.
 | Series similares (2)|  `/tv/:tvId/similar` |Listado de cards de series similares *sin paginado*|
-| **Búsqueda** | '/discover/` | Filtros de búsqueda y listado de cards de resultados con paginado |
+| **Búsqueda** | `/discover/` | Filtros de búsqueda y listado de cards de resultados con paginado |
 <br>
 
 - Las vistas marcadas en negrita son las principales y deben ser accesibles desde cualquier otra vista (estar en la navegación principal)
