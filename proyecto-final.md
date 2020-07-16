@@ -33,14 +33,14 @@ Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/i
 
 |Nombre|Ruta|Descripción
 |---|---|---|
-| **Home** | `/` |
-| **Películas** | `/movies` |
+| **Home** | `/` | `Hero` con película trending (con link a la película). `CardListPreview` de películas trending. `CardListPreview` de series trending. 
+| **Películas** | `/movies` | `Hero` con película más popular (con link a la película). `CardListPreview` con categorías |
 | Películas por categoría | `/movie/category/:categoryId` |Listado de cards de series con paginado|  
 | Detalle de película | `/movie/:movieId` | Hero con imagen. Navegación de subvistas |
 | Info de película (1)| `/movie/:movieId/info` |Poster de película con información |
 | Elenco de película (1)| `/movie/:movieId/cast` |Listado de cards del elenco *sin paginado*|
 | Películas similares (1)|  `/movie/:movieId/similar` |Listado de cards de películas similares *sin paginado*|
-| **Series** | `/tv` |
+| **Series** | `/tv` | `Hero` con serie más popular (con link a la serie). `CardListPreview` con categorías |
 | Series por categoría | `/tv/category/:categoryId` | Listado de cards de series con paginado
 | Detalle de serie | `/tv/:tvId` | Hero con imagen. Navegación de subvistas |
 | Info de serie (2)| `/tv/:tvId/info` |Poster de serie con información|
@@ -91,7 +91,7 @@ Debe contener los siguientes datos:
 
 ### Búsqueda
 
-Debe tener un ??? con dos modos, normal y avanzado. La búsqueda se realiza cuando se aprieta en un botón de buscar.
+Debe tener un filtros de búsqueda con dos modos, normal y avanzado. La búsqueda se realiza cuando se aprieta en un botón de buscar.
 
 - **Normal**
   - `select` para seleccionar medio: `Película` o `Televisión`
@@ -142,7 +142,12 @@ Debe tener un ??? con dos modos, normal y avanzado. La búsqueda se realiza cuan
 
 ## Componentes obligatorios
 
-### CardList
+### CardListPreview
+
+- Debe tener un título
+- Debe tener un link que lleve a una vista
+- Debe tener una lista de 5 cards
+- Los datos de los puntos anteriores se pasan como props
 
 ### Paginado
 
@@ -178,3 +183,12 @@ Debe tener un ??? con dos modos, normal y avanzado. La búsqueda se realiza cuan
 [Componente de ejemplo](https://material-ui.com/components/rating/) (Para tener una idea aproximada)
 
 ### Hero
+
+- Debe mostrar una imagen de fondo
+- Debe mostrar título, rating y sinopsis
+- Debe poder tener una opción para llevar a la página de la película o serie
+- Los datos de los puntos anteriores se pasan como props
+
+La API tiene distintas imágenes y opciones de imágenes:
+
+[Link](https://developers.themoviedb.org/3/getting-started/images)
