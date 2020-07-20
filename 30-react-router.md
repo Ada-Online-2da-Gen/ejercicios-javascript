@@ -51,7 +51,9 @@ Crear una `aside` con una navegación con la siguiente estructura de rutas anida
 - Cuando se selecciona una vista, el link tiene que quedar marcado con un estilo distinto en la navegación
 - Cuando se selecciona una vista anidada, tienen que quedar marcadas ambos links (si se selecciona Museos, tiene que marcarse Cultura y Museos)
 - Cuando se selecciona una vista anidada, tiene que mostrar la vista padre y la vista anidada (si se selecciona Museos, tiene que mostrarse Cultura y Museos)
-- Las rutas anidadas tienen son con parámetros, no harcodeadas, por ejemplo, todas las de cultura podrían ser algo como: `/cultura/:subcategoria`
+- Las categorías principales tienen cada una su propia vista (`ScienceView`, `SportsView`, etc)
+- Las subcategorías tienen una única vista (`SubcategoryView`)
+- Las rutas anidadas tienen parámetros, no son harcodeadas, por ejemplo, todas las de cultura podrían ser algo como: `/cultura/:subcategoria`
 
 
 ## 3) Query Params
