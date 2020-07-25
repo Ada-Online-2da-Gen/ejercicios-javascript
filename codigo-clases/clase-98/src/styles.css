@@ -1,0 +1,21 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.characters article {
+  width: 250px;
+  margin: 10px;
+}
+
+.character-name {
+}
+
+img {
+  width: 100%;
+}
