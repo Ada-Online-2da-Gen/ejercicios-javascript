@@ -34,7 +34,7 @@ Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/i
 |Nombre|Ruta|Descripción
 |---|---|---|
 | **Home** | `/` | `Hero` con película trending (con link a la película). `CardListPreview` de películas trending. `CardListPreview` de series trending. 
-| **Películas** | `/movies` | `Hero` con película más popular (con link a la película). `CardListPreview` con categorías |
+| **Películas** | `/movie` | `Hero` con película más popular (con link a la película). `CardListPreview` con categorías |
 | Películas por categoría | `/movie/category/:categoryId` |Listado de cards de series con paginado|  
 | Detalle de película | `/movie/:movieId` | Hero con imagen. Navegación de subvistas |
 | Info de película (1)| `/movie/:movieId/info` |Poster de película con información |
