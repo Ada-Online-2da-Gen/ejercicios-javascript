@@ -46,7 +46,8 @@ Usando la API de [MovieDB](https://developers.themoviedb.org/3/getting-started/i
 | Info de serie (2)| `/tv/:tvId/info` |Poster de serie con información|
 | Temporada de serie (2)| `/tv/:tvId/season/:seasonNumber` |Select con temporadas. Listado de cards de episodios. Cantidad de episodios en temporada seleccionada.
 | Series similares (2)|  `/tv/:tvId/similar` |Listado de cards de series similares *sin paginado*|
-| **Búsqueda** | `/discover/` | Filtros de búsqueda y listado de cards de resultados con paginado |
+| **Búsqueda** | `/search/` | Búsqueda y listado de cards de resultados con paginado |
+| **Descubrir** | `/discover/` | Filtros de búsqueda y listado de cards de resultados con paginado |
 <br>
 
 - Las vistas marcadas en negrita son las principales y deben ser accesibles desde cualquier otra vista (estar en la navegación principal)
@@ -91,32 +92,29 @@ Debe contener los siguientes datos:
 
 ### Búsqueda
 
-Debe tener un filtros de búsqueda con dos modos, normal y avanzado. La búsqueda se realiza cuando se aprieta en un botón de buscar.
-
-- **Normal**
-  - `select` para seleccionar medio: `Película` o `Televisión`
-  - `input` de texto para  buscar por nombre
-- **Avanzado**
-  - `select` para seleccionar medio: `Película` o `Televisión`
-  - `input` de texto para buscar por nombre
-  - `select` para seleccionar género
-  - `select` para seleccionar el criterio para el año de estreno:
-    - Antes que
-    - Exactamente
-    - Después de
-  - `select` para seleccionar el año de estreno
-  - `select` para ordernar los resultados:
-    - Más populares
-    - Menos populares
-    - Más nuevas
-    - Más viejas
-    - A/Z
-    - Z/A
-    - Con más recaudación
-    - Con menos recaudación
+- `select` para seleccionar medio: `Película` o `Televisión`
+- `input` de texto para  buscar por nombre
+- Botón para realizar la búsqueda
+  
+### Descubrimiento  
+  
+- `select` para seleccionar medio: `Película` o `Televisión`
+- `select` para seleccionar género
+- `select` para seleccionar el criterio para el año de estreno:
+  - Antes que
+  - Exactamente
+  - Después de
+- `select` para seleccionar el año de estreno
+- `select` para ordernar los resultados:
+  - Más populares
+  - Menos populares
+  - Más nuevas
+  - Más viejas
+  - Con más recaudación
+  - Con menos recaudación
 <br>
 
-- El endpoint de la API es el [siguiente](https://developers.themoviedb.org/3/discover/movie-discover)
+- El endpoint de la API es el siguiente para [películas](https://developers.themoviedb.org/3/discover/movie-discover) y para [series](https://developers.themoviedb.org/3/discover/tv-discover)
 - El género depende del medio, por lo tanto cuando se cambia a película o televisión, tienen que actualizarse el select del género
 - El select con los años de estreno tienen que generarse dinámicamente, para eso obtener la película o serie (dependiendo de lo elegido) más antigua, obtener el año de estreno, y completar con los años restantes hasta la actualidad
 - Tanto género como año de estreno tienen que tener una opción general, como "Todos" o "Cualquiera". Cuando se selecciona, no se tiene que incluir dicho parámetro de búsqueda en la llamada a la API
