@@ -1,7 +1,5 @@
 # Objetos
 
-Hacer test unitarios y funciones puras (no deberían mutar los objetos pasados como argumentos)
-
 ## Volumen de caja
 
 - Crear una función que devuelva el volumen de una caja cuando se le pase un objeto con las medidas de la misma, correspondientes al ancho, alto, y largo. El volumen se calcula multiplicando entre sí dichos valores.
